@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://juegoenigmamadrid.seccion9.com/sitemap.xml

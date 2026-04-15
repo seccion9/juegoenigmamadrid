@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-KRX3VB6");
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juego Enigma Madrid | Escape Room</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" href="../assets/ico/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRX3VB6" height="0" width="0"
+      style="display: none; visibility: hidden">
+    </iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header>
+    <div>
+      <ul id="lang-icons">
+        <li>
+          <a href="../terminos-condiciones.html">
+            <img src="../assets/svg/spain.svg" alt="Icono bandera de España" />
+          </a>
+        </li>
+        <li>
+          <a href="terminos-condiciones-en.html">
+            <img src="../assets/svg/usa.svg" alt="Icono bandera de Estados Unidos" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <nav>
+      <a href="index-en.html"><img
+          src="/assets/img/logo-enigma.png"
+          alt="Logo Enigma" /></a>
+      <div class="madrid btn-madrid-map">
+        <p>/MADRID</p>
+        <span>+</span>
+      </div>
+      <ul>
+        <li>
+          <a href="index-en.html">Escape Room</a>
+        </li>
+        <li>
+          <a href="paraRegalar-en.html">Experience</a>
+        </li>
+        <li><a href="empresas-en.html">Companies</a></li>
+        <li><a href="colaboremos-en.html">Collaborate</a></li>
+        <li>
+          <a href="reservas.html" class="reservas">Booking</a>
+        </li>
+      </ul>
+      <div class="menu-toggle">
+        <div class="burger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <div class="mobile-menu">
+          <span><a href="index-en.html">Escape Room</a></span>
+          <span><a href="paraRegalar-en.html">Experience</a></span>
+          <span><a href="empresas-en.html">Companies</a></span>
+          <span><a href="colaboremos-en.html">Collaborate</a></span>
+          <span><a href="#" class="contactanos-btn">Contact Us </a></span>
+
+          <div class="flags">
+            <a href="../terminos-condiciones.html">
+              <img src="../assets/svg/spain.svg" alt="Icono bandera de España" />
+            </a>
+
+            <a href="terminos-condiciones-en.html">
+              <img src="../assets/svg/usa.svg" alt="Icono bandera de Estados Unidos" />
+            </a>
+          </div>
+          <a href="reservas-en.html" class="btn-reservar-mobile">BOOKING</a>
+        </div>
+      </div>
+    </nav>
+    <div id="panel-madrid" class="panel-madrid-modal">
+      <div class="panel-madrid-box">
+        <a href="colaboremos-en.html#colaboremos-separador-1"><img src="../assets/img/cityMap.webp"
+            alt="Mapa Enigma España" class="mapa-madrid-img" /></a>
+      </div>
+    </div>
+    <!-- POPUP  3-->
+    <div id="popup-colaboremos-2" class="popup-overlay-2">
+      <div class="popup-box-2">
+        <h2>CONTACT US</h2>
+
+        <div class="popup-info-2">
+          <p>Juego Enigma Madrid</p>
+          <p>673 42 37 38</p>
+          <p>info@enigmamadrid.es</p>
+
+          <div>
+            <a href="https://www.tripadvisor.es/Attraction_Review-g187514-d9752255-Reviews-Juego_Enigma-Madrid.html"
+              target="_blank">
+              <img class="trip-icon-2" src="../assets/svg/tripadvisor-white.svg" alt="Logo Tripadvisor" />
+            </a>
+            <a href="https://www.instagram.com/juegoenigma" target="_blank">
+              <img class="ins-icon-2" src="../assets/svg/instagram-white.svg" alt="Logo Instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const popupOverlay2 = document.getElementById("popup-colaboremos-2");
+      const popupBox2 = document.querySelector(".popup-box-2");
+
+      document.querySelectorAll(".contactanos-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          popupOverlay2.classList.add("open");
+        });
+      });
+
+      popupOverlay2.addEventListener("click", (e) => {
+        if (!popupBox2.contains(e.target)) {
+          popupOverlay2.classList.remove("open");
+        }
+      });
+    </script>
+  </header>
+  <a href="reservas-en.html" class="btn-reservar-sticky">RESERVAR</a>
+  <script>
+    const btnMadridMap = document.querySelector(".btn-madrid-map");
+    const panelMadrid = document.getElementById("panel-madrid");
+    const stickyBtn2 = document.querySelector(".btn-reservar-sticky");
+
+    btnMadridMap.addEventListener("click", () => {
+      panelMadrid.classList.add("panel-open");
+      stickyBtn2.classList.add("hidden");
+      document.body.classList.add("body-no-scroll");
+    });
+
+    panelMadrid.addEventListener("click", (e) => {
+      if (!e.target.closest(".panel-madrid-box")) {
+        panelMadrid.classList.remove("panel-open");
+        stickyBtn2.classList.remove("hidden");
+        document.body.classList.remove("body-no-scroll");
+      }
+    });
+  </script>
+  <script>
+    const burger = document.querySelector(".burger");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const stickyBtn = document.querySelector(".btn-reservar-sticky");
+
+    burger.addEventListener("click", () => {
+      burger.classList.toggle("open");
+      mobileMenu.classList.toggle("open");
+      stickyBtn.classList.toggle("hidden");
+    });
+  </script>
+  <main>
+    <div class="main-terminos">
+      <div>
+        <h2>PRICE</h2>
+        <p>
+          The price per group is €70. VAT is included in the €70 price, in
+          accordance with applicable Spanish tax regulations. Room Escape
+          Formación reserves the right to apply any promotions or discounts.
+          These discounts are subject to change and are valid for a limited
+          time. Corporate pricing will be arranged in advance with Room Escape
+          Formación S.L.
+        </p>
+      </div>
+      <div>
+        <h2>
+          TERMS AND CONDITIONS OF PLAY, BOOKING, PAYMENTS AND CANCELLATIONS
+        </h2>
+        <p>
+          There are no pre-bookings or subsequent confirmations. By booking
+          and paying, it is understood that the chosen date is suitable for
+          all participants. The "Bookings" tab displays the available dates,
+          with those already booked shown in red. Available dates are shown in
+          green. Bookings are made online at www.juegoenirma.es. To book, go
+          to the "Book" tab, select the date and time, enter your information,
+          and complete the payment. Payment must be made in full; installments
+          are not accepted. Providing personal information is essential during
+          the booking process: name, surname, mobile phone number, email
+          address, and national identity document (DNI), which are necessary
+          for billing and contact. If the contact information provided by the
+          user is incorrect or false, Room Escape Formación is not responsible
+          for any problems arising from being unable to contact the person to
+          inform them of updates or unforeseen circumstances related to their
+          booking.
+        </p>
+        <p>
+          Once the booking is made, the customer will receive an automatic
+          booking notification email explaining the payment process and
+          reminding them of the purchase conditions. If this email is not
+          received, please contact us by phone or email explaining the issue,
+          and Room Escape Formación will verify the payment and confirm the
+          booking.
+        </p>
+        <p>
+          For a successful booking, the user must select one of the available
+          payment methods. The booking will be confirmed once the service fee
+          has been paid into the Provider's account through the payment
+          processes established on the website. Upon booking, the user will
+          receive an email as proof of payment, specifying the date and time
+          of the reservation.
+        </p>
+        <p>
+          Room Escape Formación accepts payments via bank transfer, credit or
+          debit card, and PayPal. When making a payment through the secure
+          payment gateway, the system will automatically verify that the
+          credit card is activated for Secure Electronic Commerce. It will
+          then connect to the card issuer, who will authorize the transaction.
+          Room Escape Formación is not responsible for any additional fees or
+          taxes that may be incurred when paying by bank transfer. The price
+          is specified both on the website and in the booking confirmation
+          email. In the case of bank transfers, if the payment is not received
+          within 48 hours, the user will receive a reminder email notifying
+          them that if payment is not received by midnight of the same day,
+          the system will automatically cancel the booking.
+        </p>
+        <p>
+          For credit or debit card payments, only VISA, VISA Electron, and
+          MasterCard are accepted. American Express is not accepted. The
+          information you must provide when making a payment through this
+          system is: name, card number, expiration date, and verification or
+          security code. Room Escape Formación does not have access to or
+          store any of the user's credit card information in its database.
+        </p>
+        <p>
+          In the event of a card decline, the order will be automatically
+          canceled. Last-minute bookings are those made on the day of the
+          game, or up to two days prior, and can be paid for by credit/debit
+          card. If you select bank transfer as your payment method, you must
+          send us the bank receipt along with your booking confirmation before
+          the game begins, and this will be confirmed by phone. For cash
+          payments, you will be contacted by phone for authorization.
+        </p>
+        <p>
+          The user can generate an invoice at any time from the website
+          www.juegoenigma.es. To do so, the user must log in to their account
+          and have entered their required personal information into the
+          system. The user is responsible for entering their information and
+          must verify its accuracy. The gift voucher can be purchased on the
+          website www.juegoenigma.es and expires after two months. Using the
+          code provided upon purchase, the user can reserve their chosen date.
+          The voucher is not transferable and can be used by anyone.
+        </p>
+        <p>
+          Date and time changes are not permitted within 72 hours of the
+          booking. If the booking is cancelled within the established
+          timeframe, Room Escape Formación S.L. may reschedule for a date and
+          time that is more convenient for the customer and subject to
+          availability.
+        </p>
+        <p>
+          A reservation can be cancelled by email or phone. If the
+          cancellation is eligible for a refund, and is made by email, the
+          user must provide the following information: the reservation number,
+          date and time, along with their name and bank account details for
+          the refund. If bank account details are not provided 72 hours in
+          advance, the refund cannot be processed.
+        </p>
+        <p>
+          If for technical or other reasons Room Escape Formación cannot
+          provide its services, affected bookings may be rescheduled or
+          refunded, according to the user's preference.
+        </p>
+        <p>
+          The customer cannot modify their booking through the online calendar
+          under "Bookings". Any unforeseen circumstances or changes must be
+          reported via email to adn@juegoenigma.es
+        </p>
+        <p>
+          If the team does not show up 15 minutes after their reservation
+          time, it will be considered that they have cancelled the reservation
+          and they will not be entitled to changes or refunds.
+        </p>
+      </div>
+      <div>
+        <h2>PLAYING AND VENUE CONDITIONS</h2>
+        <p>
+          The game is for groups of 2 to 5 people maximum. For corporate
+          groups, arrangements will be made directly with Room Escape
+          Formación. The minimum age to participate is 18 years old; minors
+          must be accompanied by an adult for each game.
+        </p>
+        <p>
+          Room Escape Formación has liability insurance to cover any accidents
+          that may occur on its premises. Room Escape Formación is not
+          responsible for accidents that users may have during the game if
+          they are due to user negligence, improper handling of the
+          facilities, or misuse of the objects found there.
+        </p>
+        <p>
+          Strict punctuality is required to play. All sessions are scheduled,
+          and any delay in arrival time will affect subsequent bookings. Room
+          Escape Formación reserves the right of admission, and the following
+          are prohibited: filming or photographing inside the premises;
+          participating in the game under the influence of alcohol,
+          intoxication, or any type of drugs or other psychotropic substances;
+          carrying any object capable of causing harm to people or property;
+          participants who display violent attitudes or who cause or incite
+          any disturbance in the room; serious lack of personal hygiene; and
+          failure to follow the instructions and recommendations of the game
+          staff, who will always be present on the premises during the game
+          (outside the game room). The game lasts 60 minutes, with the
+          possibility of extending it at the discretion of the game staff.
+          GameEnigma is a game of intelligence and group skill.
+        </p>
+        <p>
+          There are designated areas that are not part of the game and are
+          properly labeled. No force is required. The game contains fragile
+          and sensitive items that must be handled with care according to the
+          instructions given to each team upon arrival. All players
+          participate at their own risk.
+        </p>
+        <p>
+          Failure to comply with instructions, misuse of facilities, recording
+          or photographing the interior of the premises will result in the
+          immediate expulsion of participants, thus losing the right to
+          continue playing and the claim for any type of refund and/or
+          compensation.
+        </p>
+        <p>
+          In the event of a technical failure, unforeseen circumstances beyond
+          our control, or staff incapacity that prevents the activity from
+          taking place, Room Escape Formacion will be obliged to suspend it.
+          The customer will be notified by email and telephone via the contact
+          information provided in their booking as soon as possible. Should
+          the aforementioned extraordinary circumstances arise during a game
+          in progress, players may resume their game on another day of their
+          choosing (subject to availability), either from the point at which
+          they were interrupted or from the beginning, at no extra cost. For
+          individuals with reduced mobility (wheelchairs, crutches), it is
+          advisable to inquire beforehand.
+        </p>
+        <p>
+          Room Escape Formación reserves the right to request image rights
+          from users for any photos taken within its facilities. These photos
+          will be used for website and social media purposes, as well as for
+          promotional purposes. If a user becomes unwell during the game, they
+          must leave the game accompanied by another user until they recover;
+          the remaining users may continue playing. In case of accident or
+          serious illness, the Room Escape Formación staff supervising the
+          game may decide to stop it completely.
+        </p>
+      </div>
+      <div>
+        <h2>BOND TERMS AND CONDITIONS</h2>
+        <p>
+          The vouchers will expire after 6 months, and the booking must be
+          made within this time. After this date, the voucher will no longer
+          be valid. If the price of the activity increases, and the voucher is
+          still valid within the 6-month period, it will remain valid. Its
+          value will be deducted from the current price of the activity, and
+          you will only need to pay the difference when making the booking.
+        </p>
+      </div>
+    </div>
+  </main>
+  <a href="https://wa.me/34673423738" target="_blank" class="whatsapp"><img src="../assets/svg/whatsapp.svg"
+      alt="WhatsApp" /></a>
+  <footer class="footer">
+    <div class="footer-naranja">
+      <div class="footer-texto">
+        <a href="paraRegalar-en.html">GIFT THE<br />EXPERIENCE</a>
+        <p>673 423 738</p>
+        <p>ADN@ENIGMAMADRID.ES</p>
+        <p class="btn-donde-estamos">WHERE ARE WE?</p>
+      </div>
+      <div class="footer-iconos">
+        <a href="https://www.tripadvisor.es/Attraction_Review-g187514-d9752255-Reviews-Juego_Enigma-Madrid.html"
+          target="_blank">
+          <img src="../assets/svg/tripadvisor.svg" alt="Tripadvisor" />
+        </a>
+        <a href="https://www.instagram.com/juegoenigma/" target="_blank"><img src="../assets/svg/instagram.svg"
+            alt="Instagram" /></a>
+      </div>
+    </div>
+    <div class="footer-negro">
+      <a href="#">BLOG</a>
+      <a href="aviso-legal-en.html">LEGAL NOTICE</a>
+      <a href="privacidad-en.html">PRIVACY</a>
+      <a href="terminos-condiciones-en.html">TERMS AND CONDITIONS</a>
+      <a href="/sitemap.xml">SITEMAP</a>
+    </div>
+  </footer>
+  <footer class="footer-responsive">
+    <p>
+      <a class="tooltip" href="tel:+34673423738">CALL</a>
+    </p>
+    <p class="btn-donde-estamos">WHERE ARE WE?</p>
+  </footer>
+  <div id="panel-donde" class="panel-donde">
+    <div class="panel-donde__box">
+      <button class="panel-donde__close">&times;</button>
+      <h2>WHERE ARE WE?</h2>
+      <p class="box-direction">Calle Nuestra Señora del Carmen 7, 28039</p>
+      <div>
+        <p>
+          <img src="../assets/img/metro_line_1.webp" alt="Icono línea metro 1 Madrid" />
+          Estrecho (5 min)
+        </p>
+        <p>
+          <img src="../assets/img/metro_line_1.webp" alt="Icono línea metro 1 Madrid" />
+          Tetuán (5 min)
+        </p>
+        <p>
+          <img src="../assets/img/metro_line_7.webp" alt="Icono línea metro 7 Madrid" />
+          Francos Rodríguez (10 min)
+        </p>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3632.6362047997254!2d-3.704801223570821!3d40.458420553100154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422900b21de8d5%3A0x8eec68a84be0731c!2sC%2F%20de%20Ntra.%20Sra.%20del%20Carmen%2C%207%2C%20Tetu%C3%A1n%2C%2028039%20Madrid!5e1!3m2!1ses!2ses!4v1763467414714!5m2!1ses!2ses"
+        width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+  <script>
+    const panelDonde = document.getElementById("panel-donde");
+    const cerrarDonde = document.querySelector(".panel-donde__close");
+
+    document.querySelectorAll(".btn-donde-estamos").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        panelDonde.classList.add("panel-donde--open");
+      });
+    });
+
+    cerrarDonde.addEventListener("click", () => {
+      panelDonde.classList.remove("panel-donde--open");
+    });
+
+    panelDonde.addEventListener("click", (e) => {
+      if (e.target === panelDonde) {
+        panelDonde.classList.remove("panel-donde--open");
+      }
+    });
+  </script>
+</body>
+
+</html>
