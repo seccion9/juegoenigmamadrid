@@ -3086,11 +3086,14 @@ p {
   justify-content: space-between;
 }
 
-.footer-texto a,
-p {
+.footer-texto p {
   font-size: 16px;
   line-height: 24px;
   font-weight: bold;
+}
+
+.footer-texto a {
+  font-size: 24px;
 }
 
 .footer-iconos {
@@ -3105,15 +3108,15 @@ p {
 
 .footer-negro {
   display: flex;
+  justify-content: left;
   background-color: black;
-  gap: 70px;
   padding: 6px 6px;
 }
 
 .footer-negro a {
   text-decoration: none;
   color: white;
-  margin-left: 80px;
+  margin-left: 50px;
   white-space: nowrap;
 }
 
@@ -5849,24 +5852,6 @@ p {
     width: 40px;
   }
 
-  .footer-negro {
-    display: flex;
-    background-color: black;
-    padding: 0;
-    width: 100%;
-    gap: 2em;
-    padding: 0 3em;
-    height: 24px;
-    align-items: center;
-  }
-
-  .footer-negro a {
-    text-decoration: none;
-    color: white;
-    margin-left: 0;
-    white-space: nowrap;
-  }
-
   .main-terminos,
   .main-aviso-legal,
   .main-privacidad {
@@ -6261,24 +6246,6 @@ p {
 
   .footer-iconos a:nth-of-type(2) img {
     width: 50px;
-  }
-
-  .footer-negro {
-    display: flex;
-    background-color: black;
-    padding: 0;
-    width: 100%;
-    gap: 2em;
-    padding: 0 3em;
-    height: 24px;
-    align-items: center;
-  }
-
-  .footer-negro a {
-    text-decoration: none;
-    color: white;
-    margin-left: 0;
-    white-space: nowrap;
   }
 
   .main-terminos,
