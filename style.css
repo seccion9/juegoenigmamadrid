@@ -2096,7 +2096,7 @@ h3 {
 
 .virus-contenedor-text :last-child {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .virus-contenedor-precio {
@@ -2203,7 +2203,7 @@ h3 {
 .retos-container-1 {
   width: 100%;
   display: flex;
-  gap: 2em;
+  gap: 9em;
 }
 
 .retos-container-1 div {
@@ -2212,40 +2212,45 @@ h3 {
 }
 
 .retos-container-1 div img {
-  width: 70%;
+  width: 100%;
   position: absolute;
   top: -60px;
 }
 
-.retos-container-1 div h3 {
+.retos-container-1 div h3, .retos-container-2 div h3 {
   color: white;
   font-size: 28px;
   top: -20px;
   position: relative;
-  margin-left: 25%;
+  padding-top: 5px;
+}
+.retos-container-1 div h3 {
+  text-align: right;
+}
+.retos-container-2 div h3 {
+  text-align: left;
 }
 
 .retos-container-1 div .engranaje {
   margin-left: 5em;
 }
 
-.retos-container-1 div p {
+.retos-container-1 div p, .retos-container-2 div p {
   color: white;
   font-size: 20px;
-  width: 70%;
   position: absolute;
-  right: 200px;
   line-height: 1.5;
-  text-align: right;
-  margin: 0 auto;
   font-family: "BaseMonoWideReg Regular";
   font-weight: 400;
+}
+.retos-container-1 div p{
+  text-align: right;
 }
 
 .retos-container-2 {
   width: 100%;
   display: flex;
-  gap: 2em;
+  gap: 9em;
 }
 
 .retos-container-2 div {
@@ -2254,35 +2259,9 @@ h3 {
 }
 
 .retos-container-2 div img {
-  width: 70%;
+  width: 100%;
   position: absolute;
   top: -60px;
-  right: 20px;
-}
-
-.retos-container-2 div h3 {
-  color: white;
-  font-size: 28px;
-  top: -20px;
-  position: relative;
-  margin-left: 6em;
-}
-
-.retos-container-2 div .laberinto {
-  margin-left: 26%;
-}
-
-.retos-container-2 div p {
-  color: white;
-  font-size: 20px;
-  width: 70%;
-  position: absolute;
-  right: 80px;
-  line-height: 1.5;
-  text-align: left;
-  margin: 0 auto;
-  font-family: "BaseMonoWideReg Regular";
-  font-weight: 400;
 }
 
 /*////////////////////////////REGALOS////////////////////////////*/
@@ -5369,7 +5348,7 @@ p {
   .retos-container-1 div p {
     width: 80%;
     right: 0;
-    text-align: left;
+    text-align: right;
   }
 
   .retos-container-2 div img {
@@ -5800,7 +5779,7 @@ p {
   }
 
   .retos-container-1 div .engranaje {
-    margin-left: 45%;
+    margin-left: 10%;
     white-space: nowrap;
   }
 
@@ -6216,18 +6195,17 @@ p {
   }
 
   .retos-container-1 div p {
-    position: relative;
-    right: -8%;
-    width: 85%;
+       position: relative;
+    right: 0;
+    width: 100%;
   }
 
   .retos-container-1 div h3 {
-    margin-left: 60%;
-    right: 0;
+    margin-right: 0;
   }
 
   .retos-container-1 div .engranaje {
-    margin-left: 50%;
+    margin-left: 30%;
   }
 
   .retos-container-2 div img {
@@ -6586,13 +6564,12 @@ p {
 
   .retos-container-1 div p {
     position: relative;
-    right: -8%;
-    width: 85%;
+    width: 100%;
+    right: 0;
   }
 
   .retos-container-1 div h3 {
-    margin-left: 30%;
-    right: 0;
+    margin-right: 0;
   }
 
   .retos-container-1 div .engranaje {
