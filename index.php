@@ -228,7 +228,7 @@ require_once $gU.'index.gz';?>
           <div class="virus-contenedor-precio">
             <p><span>NUESTRAS INSTALACIONES:</span> 8-24 DETECTIVES</p>
             <p><span>A DOMICILIO:</span> +20 DETECTIVES</p>
-            <p><span>PRECIO:</span> Desde 19€ por persona</p>
+            <p><span>PRECIO:</span> 19€ por persona</p>
           </div>
           <a href="./pages/info-asesino-de-keylock-city.html" class="keylock-contenedor-boton">+ INFO Y RESERVA</a>
         </div>

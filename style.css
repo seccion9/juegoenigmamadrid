@@ -3387,11 +3387,12 @@ p {
 .main-virus-paragraph {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1.2em;
 }
 
 .main-virus-paragraph div h3 {
   font-size: 20px;
+  margin-bottom: 5px;
 }
 
 .main-virus-paragraph div p {
@@ -3425,7 +3426,7 @@ p {
 
 .main-virus-modos-img {
   background-image: url(./assets/img/pizarra.webp);
-  width: 100%;
+  
   padding: 2em 3em;
   display: flex;
   flex-direction: column;
@@ -3437,6 +3438,7 @@ p {
 .main-virus-modos-img p {
   font-family: "BaseMonoWideReg Regular";
   font-weight: 400;
+  font-size: 16px;
 }
 
 .main-virus-info {
@@ -3657,15 +3659,17 @@ p {
 .descripcion-negra {
   background-color: black;
   color: white;
-  width: 50%;
+  max-width: 550px;
   transform: skew(-4deg, -8deg);
-  padding: 50px 50px;
+  padding: 35px 50px;
+  margin: 30px 15px;
   text-align: justify;
 }
 
 .descripcion-negra-contenido {
   display: inline-block;
   transform: skew(4deg, 8deg);
+  width: 100%;
 }
 
 .descripcion-negra-contenido p {
@@ -3673,7 +3677,9 @@ p {
   font-size: 18px;
   letter-spacing: 2px;
   font-weight: 100;
-  margin-bottom: 5%;
+  margin: 5%;
+  width: 100%;
+  line-height: 1.5rem;
 }
 
 .descripcion-negra-contenido b {
@@ -4043,6 +4049,9 @@ p {
   font-weight: 100;
   font-size: 28px;
   background: transparent;
+}
+.campo input{
+  outline: none;
 }
 
 @media (max-width: 550px) {
