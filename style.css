@@ -2650,16 +2650,19 @@ h3 {
   display: block;
 }
 
-.slide:first-child img {
+.slide:first-child img,
+.slide:last-child img {
   object-position: top;
 }
 
 .slide h2 {
   position: absolute;
-  bottom: 20px;
-  left: 40px;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.8em;
   text-transform: uppercase;
   text-shadow: 2px 2px 6px black;
 }
@@ -2667,11 +2670,11 @@ h3 {
 .prev,
 .next {
   position: absolute;
-  top: 50%;
+  top: 35%;
   transform: translateY(-50%);
   font-size: 2.5em;
   color: white;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: none;
   padding: 10px;
   cursor: pointer;
   z-index: 1;
@@ -2954,10 +2957,9 @@ h3 {
 
 /*/ ///////////////////////////CARRUSEL////////////////////////////*/
 .carrusel {
-  width: 80%;
+  max-width: 78%;
   margin: 3em auto;
-  overflow: hidden;
-  background: url("../assets/img/noise_tile-white.webp") repeat;
+  overflow: hidden;  
   margin-bottom: 20em;
   margin-top: 6em;
   display: flex;
