@@ -50,6 +50,9 @@
 
 body {
   background: url("./assets/img/body-back.webp") repeat;
+  /* AÑADIR ESTO DEPENDIENDO DE LO QUE HAYA MODIFICADO CARLOS */
+  /* background-position: center;
+  background-attachment: fixed; */
 }
 
 header {
@@ -200,6 +203,7 @@ main {
   position: relative;
   background-image: url(./assets/img/home.webp);
   background-size: cover;
+ 
   overflow: hidden;
 }
 
