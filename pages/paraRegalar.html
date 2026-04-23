@@ -28,7 +28,7 @@
   <link rel="icon" href="../assets/ico/favicon.ico" type="image/x-icon" />
 </head>
 
-<body>
+<body style="background-attachment: fixed;">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRX3VB6" height="0" width="0"
       style="display: none; visibility: hidden"></iframe></noscript>
@@ -263,8 +263,9 @@
           </option>
         </select>
         <div class="total-compra">
-          TOTAL: <span>64€</span>
-          <button>COMPRAR</button>
+          TOTAL: <span id="precio-total-1">64€</span>
+          <button id="btn-comprar-1">COMPRAR</button>
+
         </div>
       </div>
       <div class="comprar-keylock">
@@ -280,31 +281,31 @@
       <div class="comprar-virus-form">
         <label for="jugadores2">Jugadores</label>
         <select id="jugadores2">
-          <option value="144">8 Personas 18.00 €/Persona</option>
-          <option value="162">9 Personas 18.00 €/Persona</option>
-          <option value="180">10 Personas 18.00 €/Persona</option>
-          <option value="198">11 Personas 18.00 €/Persona</option>
-          <option value="216">12 Personas 18.00 €/Persona</option>
-          <option value="234">13 Personas 18.00 €/Persona</option>
-          <option value="252">14 Personas 18.00 €/Persona</option>
-          <option value="270">15 Personas 18.00 €/Persona</option>
-          <option value="288">16 Personas 18.00 €/Persona</option>
-          <option value="306">17 Personas 18.00 €/Persona</option>
-          <option value="324">18 Personas 18.00 €/Persona</option>
-          <option value="342">19 Personas 18.00 €/Persona</option>
-          <option value="360">20 Personas 18.00 €/Persona</option>
-          <option value="378">21 Personas 18.00 €/Persona</option>
-          <option value="396">22 Personas 18.00 €/Persona</option>
-          <option value="414">23 Personas 18.00 €/Persona</option>
-          <option value="432">24 Personas 18.00 €/Persona</option>
-          <option value="450">25 Personas 18.00 €/Persona</option>
-          <option value="468">26 Personas 18.00 €/Persona</option>
-          <option value="486">27 Personas 18.00 €/Persona</option>
-          <option value="504">28 Personas 18.00 €/Persona</option>
+          <option value="152">8 Personas 19.00 €/Persona</option>
+          <option value="171">9 Personas 19.00 €/Persona</option>
+          <option value="190">10 Personas 19.00 €/Persona</option>
+          <option value="209">11 Personas 19.00 €/Persona</option>
+          <option value="228">12 Personas 19.00 €/Persona</option>
+          <option value="247">13 Personas 19.00 €/Persona</option>
+          <option value="266">14 Personas 19.00 €/Persona</option>
+          <option value="285">15 Personas 19.00 €/Persona</option>
+          <option value="304">16 Personas 19.00 €/Persona</option>
+          <option value="323">17 Personas 19.00 €/Persona</option>
+          <option value="342">18 Personas 19.00 €/Persona</option>
+          <option value="361">19 Personas 19.00 €/Persona</option>
+          <option value="380">20 Personas 19.00 €/Persona</option>
+          <option value="399">21 Personas 19.00 €/Persona</option>
+          <option value="418">22 Personas 19.00 €/Persona</option>
+          <option value="437">23 Personas 19.00 €/Persona</option>
+          <option value="456">24 Personas 19.00 €/Persona</option>
+          <option value="475">25 Personas 19.00 €/Persona</option>
+          <option value="494">26 Personas 19.00 €/Persona</option>
+          <option value="513">27 Personas 19.00 €/Persona</option>
+          <option value="532">28 Personas 19.00 €/Persona</option>
         </select>
         <div class="total-compra">
-          TOTAL: <span>144€</span>
-          <button>COMPRAR</button>
+          TOTAL: <span id="precio-total-2">152€</span>
+          <button id="btn-comprar-2">COMPRAR</button>
         </div>
       </div>
     </div>
@@ -385,6 +386,35 @@
       }
     });
   </script>
+  <script>
+      // Lógica para el primer bloque ("El Virus")
+      const desplegable1 = document.getElementById("jugadores");
+      const total1 = document.getElementById("precio-total-1");
+      const btnComprar1 = document.getElementById("btn-comprar-1");
+
+      desplegable1.addEventListener("change", function() {
+        total1.textContent = this.value + "€";
+      });
+      
+      btnComprar1.addEventListener("click", function() {
+        // Reemplazar '#' por enlace de compra (pasarela de pago o carrito)
+        window.location.href = '#'; 
+      });
+
+      // Lógica para el segundo bloque ("El Asesino de Keylock City")
+      const desplegable2 = document.getElementById("jugadores2");
+      const total2 = document.getElementById("precio-total-2");
+      const btnComprar2 = document.getElementById("btn-comprar-2");
+
+      desplegable2.addEventListener("change", function() {
+        total2.textContent = this.value + "€";
+      });
+      
+      btnComprar2.addEventListener("click", function() {
+        // Reemplazar '#' por enlace de compra (pasarela de pago o carrito)
+        window.location.href = '#';
+      });
+    </script>
 </body>
 
 </html>
