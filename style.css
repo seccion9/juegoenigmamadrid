@@ -51,15 +51,15 @@
 body {
   background: url("./assets/img/body-back.webp") repeat;
   /* AÑADIR ESTO DEPENDIENDO DE LO QUE HAYA MODIFICADO CARLOS */
-  /* background-position: center;
-  background-attachment: fixed; */
+  background-position: center;
+  background-attachment: fixed;
 }
 
 header {
   background-image: url(./assets/img/bg_menu.webp);
   display: flex;
   border-bottom: 7px solid #ff5f01;
-  padding: 0.5em;
+  /* padding: 0.5em; */
   position: fixed;
   top: 0;
   left: 0;
@@ -75,6 +75,8 @@ header div ul {
   display: flex;
   flex-direction: column;
   gap: 0.1em;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
 header ul li img {
@@ -88,10 +90,13 @@ header nav {
   margin: 0 auto;
   display: flex;
   font-size: 18px;
+  align-items: center;
+  gap: 20px;
 }
 
 header nav .madrid {
   cursor: pointer;
+  margin-bottom: 80px;
 }
 
 header nav img {
@@ -195,7 +200,8 @@ main {
   color: white;
   text-decoration: none;
   background-color: #ff5f01;
-  padding: 0.5rem;
+  padding: 40px 5px 10px 5px;
+  margin-bottom: 40px;
 }
 
 .main-container {
@@ -203,20 +209,19 @@ main {
   position: relative;
   background-image: url(./assets/img/home.webp);
   background-size: cover;
- 
-  overflow: hidden;
+  background-position: center;
+  width: auto;
 }
 
 .reservas-container {
   position: absolute;
-  bottom: 0px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 0em;
 }
 
 .reservas-container .reservas-container-boton {
@@ -227,9 +232,22 @@ main {
 }
 
 .reservas-container .reservas-container-texto {
-  display: flex;
+display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1em;
+  position: relative;
+  overflow: hidden; 
+  padding-bottom: clamp(0px, calc(140px - 10vw), 60px); 
+  transition: padding-bottom 0.1s linear;
+}
+
+.reservas-container .reservas-container-texto img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: calc(-60px + clamp(0px, calc(140px - 10vw), 60px));
+  transition: bottom 0.1s linear;
 }
 
 .reservas-container a {
@@ -2036,14 +2054,24 @@ h3 {
   gap: 2em;
 }
 
-.servicios-virus img {
-  padding: 0.5em;
-  border-top: 10px solid #ff5f01;
-  border-right: 1px solid #ff5f01;
-  border-bottom: 3px solid #ff5f01;
-  border-left: 10px solid #ff5f01;
-  border-radius: 20em;
-  transform: scale(1.2);
+.circulo-naranja-detective, .circulo-naranja-virus {
+    width: 200px; 
+    height: 200px; 
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    position: relative; 
+    overflow: hidden;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circulo-naranja-detective{
+     background-image: url("./assets/img/circulo_detective.png");
+}
+.circulo-naranja-virus {
+  background-image: url("./assets/img/circulo_virus.png");
 }
 
 .servicios-virus-contenedor {
@@ -2141,16 +2169,6 @@ h3 {
   align-items: center;
   height: 100%;
   gap: 2em;
-}
-
-.servicios-keylock img {
-  padding: 0.5em;
-  border-top: 10px solid #ff5f01;
-  border-right: 10px solid #ff5f01;
-  border-bottom: 3px solid #ff5f01;
-  border-left: 1px solid #ff5f01;
-  border-radius: 20em;
-  transform: scale(1.2);
 }
 
 .servicios-keylock-contenedor {
@@ -6129,24 +6147,25 @@ p {
     white-space: nowrap;
   }
   header nav {
-    margin: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   header nav img {
-    margin-right: 1em;
+    display: none;
   }
 
   header nav .madrid {
     left: 25%;
     top: 0;
-    position: absolute;
   }
 
   header nav ul {
     width: 100%;
     gap: 1em;
     margin-left: 1em;
-    position: absolute;
     top: 35%;
     left: 25%;
   }

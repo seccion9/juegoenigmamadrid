@@ -184,12 +184,15 @@ require_once $gU.'index.gz';?>
             Encuentra pistas, resuelve enigmas y escapa en menos de 60
             minutos.
           </p>
+           <img src="./assets/img/flecha_header.png" alt = "Científico con jeringuilla"/>
         </div>
       </div>
     </div>
     <section class="servicios">
       <article class="servicios-virus">
-        <img src="./assets/img/virus_b.webp" alt="Científico con jeringuilla" />
+        <div class="circulo-naranja-virus">
+           <img src="./assets/img/virus_b.webp" alt = "Científico con jeringuilla"/>
+        </div>
         <div class="servicios-virus-contenedor">
           <div class="virus-contenedor-text">
             <p>Nuestras instalaciones</p>
@@ -211,7 +214,9 @@ require_once $gU.'index.gz';?>
         </div>
       </article>
       <article class="servicios-keylock">
-        <img src="./assets/img/virus_a.webp" alt="Detective sin rostro" />
+        <div class="circulo-naranja-detective">
+            <img src="./assets/img/virus_a.webp" alt="Detective sin rostro" />
+        </div>
         <div class="servicios-keylock-contenedor">
           <div class="virus-contenedor-text">
             <p>Nuestras instalaciones / A domicilio</p>
