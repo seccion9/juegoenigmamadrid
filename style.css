@@ -49,7 +49,7 @@
 }
 
 body {
-  background: url("./assets/img/body-back.webp") repeat;
+  background: url("./assets/img/body-back.webp") repeat fixed;
 }
 
 header {
