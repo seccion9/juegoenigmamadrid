@@ -176,6 +176,11 @@
           alt="Selección de personal 2" />
         <h2>TEAMBUILDING</h2>
       </div>
+      <div class="slide">
+        <img src="/assets/img/slider_empresas_02.webp"
+          alt="Selección de personal 1" />
+        <h2>SELECCIÓN DE PERSONAL</h2>
+      </div>
     </div>
     <a class="prev">&#10094;</a>
     <a class="next">&#10095;</a>
@@ -188,24 +193,41 @@
     let index = 0;
     const slides = document.querySelectorAll(".slide");
     const dots = document.querySelectorAll(".dot");
-    const showSlide = (i) => {
-      slides.forEach(
-        (s, n) => (s.style.transform = `translateX(-${i * 100}%)`)
-      );
+    const totalOriginales = 2;
+
+    const showSlide = (i, conAnimacion = true) => {
+      slides.forEach((s) => {
+        s.style.transition = conAnimacion ? "transform 1s ease" : "none";
+        s.style.transform = `translateX(-${i * 100}%)`;
+      });
       dots.forEach((d) => d.classList.remove("active"));
-      dots[i].classList.add("active");
+      dots[i % totalOriginales].classList.add("active");
     };
 
     document.querySelector(".next").onclick = () => {
-      index = (index + 1) % slides.length;
+      if (index >= totalOriginales) return;
+      index++;
       showSlide(index);
+      
+      if (index === totalOriginales) {
+        setTimeout(() => {
+          index = 0;
+          showSlide(index, false);
+        }, 1000);
+      }
     };
+
     document.querySelector(".prev").onclick = () => {
-      index = (index - 1 + slides.length) % slides.length;
+      if (index <= 0) {
+        index = totalOriginales;
+        showSlide(index, false);
+        slides[0].offsetHeight;
+      }
+      index--;
       showSlide(index);
     };
-    dots.forEach(
-      (dot, i) =>
+
+    dots.forEach((dot, i) =>
       (dot.onclick = () => {
         index = i;
         showSlide(index);
@@ -213,8 +235,7 @@
     );
 
     setInterval(() => {
-      index = (index + 1) % slides.length;
-      showSlide(index);
+      document.querySelector(".next").click();
     }, 10000);
   </script>
   <section class="empresas">
@@ -396,24 +417,20 @@
         <img src="../assets/img/carrusel/telefonica.webp" alt="Logo Telefónica" />
         <img src="../assets/img/carrusel/sabadell.webp" alt="Logo Sabadell" />
         <img src="../assets/img/carrusel/novartis.webp" alt="Logo Novartis" />
+      </div>
+      <div>
         <img src="../assets/img/carrusel/momentum.webp" alt="Logo Momentum" />
-      </div>
-      <div>
         <img src="../assets/img/carrusel/ing.webp" alt="Logo ING" />
-        <img src="../assets/img/carrusel/iberia.webp" alt="Logo Iberia" />
-        <img src="../assets/img/carrusel/decathlon.webp" alt="Logo Decathlon" />
-        <img src="../assets/img/carrusel/colgate.webp" alt="Logo Colgate" />
+        <img src="../assets/img/carrusel/iberia.webp" alt="Logo Iberia" />       
       </div>
-      <div>
+      <div>           
         <img src="../assets/img/carrusel/decathlon.webp" alt="Logo Decathlon" />
         <img src="../assets/img/carrusel/colgate.webp" alt="Logo Colgate" />
+        <img src="../assets/img/carrusel/bayer.webp" alt="Logo Bayer" />     
+      </div>
+        <img src="../assets/img/carrusel/adecco.webp" alt="Logo Adecco" />
         <img src="../assets/img/carrusel/cinesa.webp" alt="Logo Cinesa" />
         <img src="../assets/img/carrusel/calvo.webp" alt="Logo Calvo" />
-      </div>
-      <div>
-        <img src="../assets/img/carrusel/bayer.webp" alt="Logo Bayer" />
-        <img src="../assets/img/carrusel/adecco.webp" alt="Logo Adecco" />
-      </div>
     </div>
   </section>
   <!-- <script>
