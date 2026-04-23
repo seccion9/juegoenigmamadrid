@@ -3506,7 +3506,7 @@ p {
 
 .panel-donde__box .box-direction {
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 2;
   margin: 0 0 15px 0;
   margin-top: auto;
   font-size: 24px;
