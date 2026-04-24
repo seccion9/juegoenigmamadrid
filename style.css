@@ -49,10 +49,7 @@
 }
 
 body {
-  background: url("./assets/img/body-back.webp") repeat;
-  /* AÑADIR ESTO DEPENDIENDO DE LO QUE HAYA MODIFICADO CARLOS */
-  background-position: center;
-  background-attachment: fixed;
+  background: url("./assets/img/body-back.webp") repeat fixed;
 }
 
 header {
@@ -298,15 +295,15 @@ display: flex;
   align-items: center;
   margin: 0 auto;
   margin-top: 8em;
-  width: 65%;
+  width: 58%;
   padding-bottom: 10%;
 }
 
 .main-terminos h2,
 .main-aviso-legal h2,
 .main-privacidad h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #ff5f01;
-  font-family: "Montserrat";
   font-size: 1.5rem;
   margin-bottom: 8px;
   font-weight: 500;
@@ -315,8 +312,8 @@ display: flex;
 .main-terminos h3,
 .main-aviso-legal h3,
 .main-privacidad h3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: grey;
-  font-family: "Montserrat";
   font-size: 1.5rem;
   margin-bottom: 5px;
 }
@@ -324,13 +321,18 @@ display: flex;
 .main-terminos p,
 .main-aviso-legal p,
 .main-privacidad p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: white;
-  font-family: "Montserrat";
   font-weight: 100;
-  font-size: 1rem;
-  margin-bottom: 40px;
+  font-size: 16px;
   text-align: left;
   line-height: 1.5;
+}
+.main-privacidad p {
+   margin-bottom: 40px;
+}
+.main-terminos p {
+   margin-bottom: 20px;
 }
 
 /*/ ///////////////////////////COLABOREMOS////////////////////////////*/
@@ -2416,6 +2418,7 @@ h3 {
   font-family: "BaseMonoWideReg Regular";
   font-weight: 400;
   font-size: 1em;
+  margin: 1.5% 0;
 }
 
 .bono-contenido .nota {
@@ -2425,19 +2428,19 @@ h3 {
 
 .bono-boton {
   position: absolute;
-  right: 1.2em;
+  right: 2.5em;
   color: white;
   text-decoration: none;
   background-color: #ff5f01;
-  padding: 0.5em 0.5em;
-  margin-top: 1em;
+  padding: 0.7em 0.7em;
+  margin-top: 2.3em;
 }
 
 .fajo-section {
   width: 100%;
   height: 100%;
   padding: 2.5em;
-  padding-bottom: 4em;
+  padding-bottom: 5em;
   background-image: url(./assets/img/metal_derecho.webp);
   display: flex;
   flex-direction: column;
@@ -2462,6 +2465,7 @@ h3 {
   font-family: "BaseMonoWideReg Regular";
   font-weight: 400;
   font-size: 1em;
+  margin: 1.5% 0;
 }
 
 .fajo-contenido .nota {
@@ -2609,6 +2613,7 @@ h3 {
   font-family: "Montserrat";
   font-size: 1em;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+  line-height: 1.0em;
 }
 
 .comprar-keylock-paragraph {
@@ -2651,16 +2656,19 @@ h3 {
   display: block;
 }
 
-.slide:first-child img {
+.slide:first-child img,
+.slide:last-child img {
   object-position: top;
 }
 
 .slide h2 {
   position: absolute;
-  bottom: 20px;
-  left: 40px;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.8em;
   text-transform: uppercase;
   text-shadow: 2px 2px 6px black;
 }
@@ -2668,11 +2676,11 @@ h3 {
 .prev,
 .next {
   position: absolute;
-  top: 50%;
+  top: 35%;
   transform: translateY(-50%);
   font-size: 2.5em;
   color: white;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: none;
   padding: 10px;
   cursor: pointer;
   z-index: 1;
@@ -2955,10 +2963,9 @@ h3 {
 
 /*/ ///////////////////////////CARRUSEL////////////////////////////*/
 .carrusel {
-  width: 80%;
+  max-width: 78%;
   margin: 3em auto;
-  overflow: hidden;
-  background: url("../assets/img/noise_tile-white.webp") repeat;
+  overflow: hidden;  
   margin-bottom: 20em;
   margin-top: 6em;
   display: flex;
@@ -3528,7 +3535,7 @@ p {
 
 .panel-donde__box .box-direction {
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 2;
   margin: 0 0 15px 0;
   margin-top: auto;
   font-size: 24px;
