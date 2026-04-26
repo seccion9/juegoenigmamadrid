@@ -60,16 +60,16 @@ require_once $gU.'index.gz';?>
     <div>
       <ul>
         <li>
-          <a href="index.html"><img src="/assets/svg/spain.svg" alt="Icono bandera de España" /></a>
+          <a href="index.html"><img src="/assets/svg/spain.svg" alt="Icono bandera de España" width="64" height="64" /></a>
         </li>
         <li>
-          <a href="ingles/index-en.html"><img src="./assets/svg/usa.svg" alt="Icono bandera de Estados Unidos" /></a>
+          <a href="ingles/index-en.html"><img src="./assets/svg/usa.svg" alt="Icono bandera de Estados Unidos" width="64" height="64" /></a>
         </li>
       </ul>
     </div>
     <nav>
       <a href="/"><img src="/assets/img/logo.webp"
-          alt="Logo Enigma" /></a>
+          alt="Logo Enigma" width="341" height="101" /></a>
       <div class="madrid btn-madrid-map">
         <p>/MADRID</p>
         <span>+</span>
@@ -102,9 +102,9 @@ require_once $gU.'index.gz';?>
           <span><a href="#" class="contactanos-btn">Contáctanos</a></span>
 
           <div class="flags">
-            <a href="/index.html"><img src="../assets/svg/spain.svg" alt="Icono bandera de España" /></a>
+            <a href="/index.html"><img src="../assets/svg/spain.svg" alt="Icono bandera de España" width="64" height="64" /></a>
             <a href="/ingles/index-en.html"><img src="../assets/svg/usa.svg"
-                alt="Icono bandera de Estados Unidos" /></a>
+                alt="Icono bandera de Estados Unidos" width="64" height="64" /></a>
           </div>
           <a href="/pages/reservas.html" class="btn-reservar-mobile">RESERVAR</a>
         </div>
@@ -113,7 +113,7 @@ require_once $gU.'index.gz';?>
     <div id="panel-madrid" class="panel-madrid-modal">
       <div class="panel-madrid-box">
         <a href="../colaboremos.html#colaboremos-separador-1"><img src="../assets/img/cityMap.webp"
-            alt="Mapa Enigma España" class="mapa-madrid-img" loading="lazy" /></a>
+            alt="Mapa Enigma España" class="mapa-madrid-img" loading="lazy" width="1024" height="652" /></a>
       </div>
     </div>
     <!-- POPUP  3-->
@@ -129,10 +129,10 @@ require_once $gU.'index.gz';?>
           <div>
             <a href="https://www.tripadvisor.es/Attraction_Review-g187514-d9752255-Reviews-Juego_Enigma-Madrid.html"
               target="_blank">
-              <img class="trip-icon-2" src="../assets/svg/tripadvisor-white.svg" alt="Logo Tripadvisor" loading="lazy" />
+              <img class="trip-icon-2" src="../assets/svg/tripadvisor-white.svg" alt="Logo Tripadvisor" loading="lazy" width="40" height="40" />
             </a>
             <a href="https://www.instagram.com/juegoenigma" target="_blank">
-              <img class="ins-icon-2" src="../assets/svg/instagram-white.svg" alt="Logo Instagram" loading="lazy" />
+              <img class="ins-icon-2" src="../assets/svg/instagram-white.svg" alt="Logo Instagram" loading="lazy" width="40" height="40" />
             </a>
           </div>
         </div>
@@ -185,9 +185,9 @@ require_once $gU.'index.gz';?>
     <div class="main-container">
       <div class="reservas-container">
         <div class="reservas-container-boton">
-          <img src="./assets/img/cable_izqiuerdo.webp" alt="decoración" />
+          <img src="./assets/img/cable_izqiuerdo.webp" alt="decoración" width="720" height="153" />
           <a href="./pages/reservas.html">RESERVAR</a>
-          <img src="./assets/img/cable_derecho.webp" alt="decoración" />
+          <img src="./assets/img/cable_derecho.webp" alt="decoración" width="720" height="153" />
         </div>
         <div class="reservas-container-texto">
           <p>JUEGO DE ESCAPE EN VIVO</p>
@@ -201,7 +201,7 @@ require_once $gU.'index.gz';?>
     </div>
     <section class="servicios">
       <article class="servicios-virus">
-        <img src="./assets/img/virus_b.webp" alt="Científico con jeringuilla" loading="lazy" />
+        <img src="./assets/img/virus_b.webp" alt="Científico con jeringuilla" loading="lazy" width="160" height="160" />
         <div class="servicios-virus-contenedor">
           <div class="virus-contenedor-text">
             <p>Nuestras instalaciones</p>
@@ -223,7 +223,7 @@ require_once $gU.'index.gz';?>
         </div>
       </article>
       <article class="servicios-keylock">
-        <img src="./assets/img/virus_a.webp" alt="Detective sin rostro" loading="lazy" />
+        <img src="./assets/img/virus_a.webp" alt="Detective sin rostro" loading="lazy" width="160" height="160" />
         <div class="servicios-virus-contenedor">
           <div class="virus-contenedor-text">
             <p>Nuestras instalaciones / A domicilio</p>
@@ -248,12 +248,12 @@ require_once $gU.'index.gz';?>
     </section>
     <section class="retos">
       <img src="./assets/img/home_icons.webp" alt="Iconos varios de temática Scape Room: reloj, candado, equipo, puerta"
-        class="collage" loading="lazy" />
+        class="collage" loading="lazy" width="975" height="390" />
       <section class="retos-container">
         <div class="retos-container-1">
-          <img src="./assets/img/box-01.webp" alt="Grupo de personas jugando a escape room" class="equipo" loading="lazy" />
+          <img src="./assets/img/box-01.webp" alt="Grupo de personas jugando a escape room" class="equipo" loading="lazy" width="713" height="382" />
           <div>
-            <img src="./assets/img/mini_hexagon_01.webp" alt="" loading="lazy" />
+            <img src="./assets/img/mini_hexagon_01.webp" alt="" loading="lazy" width="875" height="134" />
             <div>
               <h3>¿Te atreves?</h3>
               <p>
@@ -267,7 +267,7 @@ require_once $gU.'index.gz';?>
         </div>
         <div class="retos-container-2">
           <div>
-            <img src="./assets/img/mini_hexagon_02.webp" alt="" loading="lazy" />
+            <img src="./assets/img/mini_hexagon_02.webp" alt="" loading="lazy" width="931" height="139" />
             <div>
               <h3>La unión hace la fuerza</h3>
               <p>
@@ -279,12 +279,12 @@ require_once $gU.'index.gz';?>
               </p>
             </div>
           </div>
-          <img src="./assets/img/box-02.webp" alt="Contador con 59 minutos y 59 segundos" class="contador" loading="lazy" />
+          <img src="./assets/img/box-02.webp" alt="Contador con 59 minutos y 59 segundos" class="contador" loading="lazy" width="726" height="401" />
         </div>
         <div class="retos-container-1">
-          <img src="./assets/img/box-03.webp" alt="Manos uniendo engranajes" class="engranajes" loading="lazy" />
+          <img src="./assets/img/box-03.webp" alt="Manos uniendo engranajes" class="engranajes" loading="lazy" width="729" height="382" />
           <div>
-            <img src="./assets/img/mini_hexagon_03.webp" alt="" loading="lazy" />
+            <img src="./assets/img/mini_hexagon_03.webp" alt="" loading="lazy" width="875" height="134" />
             <div>
               <h3 class="engranaje">Sé protagonista</h3>
               <p>
@@ -299,7 +299,7 @@ require_once $gU.'index.gz';?>
         </div>
         <div class="retos-container-2">
           <div>
-            <img src="./assets/img/mini_hexagon_04.webp" alt="" loading="lazy" />
+            <img src="./assets/img/mini_hexagon_04.webp" alt="" loading="lazy" width="931" height="139" />
             <div>
               <h3>Diversión ante todo</h3>
               <p>
@@ -311,13 +311,13 @@ require_once $gU.'index.gz';?>
               </p>
             </div>
           </div>
-          <img src="./assets/img/box-04.webp" alt="Laberinto" class="laberintos" loading="lazy" />
+          <img src="./assets/img/box-04.webp" alt="Laberinto" class="laberintos" loading="lazy" width="716" height="370" />
         </div>
       </section>
     </section>
   </main>
   <a href="https://wa.me/34673423738" target="_blank" class="whatsapp"><img src="../assets/svg/whatsapp.svg"
-      alt="WhatsApp" loading="lazy" /></a>
+      alt="WhatsApp" loading="lazy" width="64" height="64" /></a>
   <footer class="footer">
     <div class="footer-naranja">
       <div class="footer-texto">
@@ -328,9 +328,9 @@ require_once $gU.'index.gz';?>
       </div>
       <div class="footer-iconos">
         <a href="https://www.tripadvisor.es/Attraction_Review-g187514-d9752255-Reviews-Juego_Enigma-Madrid.html"
-          target="_blank"><img src="assets/svg/tripadvisor.svg" alt="Tripadvisor" loading="lazy" /></a>
+          target="_blank"><img src="assets/svg/tripadvisor.svg" alt="Tripadvisor" loading="lazy" width="40" height="40" /></a>
         <a href="https://www.instagram.com/juegoenigma/" target="_blank"><img src="assets/svg/instagram.svg"
-            alt="Instagram" loading="lazy" /></a>
+            alt="Instagram" loading="lazy" width="40" height="40" /></a>
       </div>
     </div>
     <div class="footer-negro">
@@ -354,15 +354,15 @@ require_once $gU.'index.gz';?>
       <p class="box-direction">Calle Nuestra Señora del Carmen 7, 28039</p>
       <div>
         <p>
-          <img src="../assets/img/metro_line_1.webp" alt="Icono línea metro 1 Madrid" loading="lazy" />
+          <img src="../assets/img/metro_line_1.webp" alt="Icono línea metro 1 Madrid" loading="lazy" width="28" height="28" />
           Estrecho (5 min)
         </p>
         <p>
-          <img src="../assets/img/metro_line_1.webp" alt="Icono línea metro 1 Madrid" loading="lazy" />
+          <img src="../assets/img/metro_line_1.webp" alt="Icono línea metro 1 Madrid" loading="lazy" width="28" height="28" />
           Tetuán (5 min)
         </p>
         <p>
-          <img src="../assets/img/metro_line_7.webp" alt="Icono línea metro 7 Madrid" loading="lazy" />
+          <img src="../assets/img/metro_line_7.webp" alt="Icono línea metro 7 Madrid" loading="lazy" width="28" height="28" />
           Francos Rodríguez (10 min)
         </p>
       </div>
