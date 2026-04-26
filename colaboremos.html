@@ -430,21 +430,18 @@
     </div>
   </div>
   <script>
-    const panelDonde = document.getElementById("panel-donde");
-    const cerrarDonde = document.querySelector(".panel-donde__close");
-
-    document.querySelectorAll(".btn-donde-estamos").forEach((btn) => {
-      btn.addEventListener("click", () => {
+    const panelDonde=document.getElementById("panel-donde");
+    const cerrarDonde=document.querySelector(".panel-donde__close");
+    document.querySelectorAll(".btn-donde-estamos").forEach((btn)=>{
+      btn.addEventListener("click",()=>{
         panelDonde.classList.add("panel-donde--open");
       });
     });
-
-    cerrarDonde.addEventListener("click", () => {
+    cerrarDonde.addEventListener("click",()=>{
       panelDonde.classList.remove("panel-donde--open");
     });
-
-    panelDonde.addEventListener("click", (e) => {
-      if (e.target === panelDonde) {
+    panelDonde.addEventListener("click",(e)=>{
+      if(e.target===panelDonde){
         panelDonde.classList.remove("panel-donde--open");
       }
     });
@@ -464,18 +461,16 @@
     </div>
   </div>
   <script>
-    const btnContacto = document.getElementById("btn-contacto");
-    const popup = document.getElementById("popup-contacto");
-
-    btnContacto.addEventListener("click", () => {
-      popup.style.display = "flex";
-      document.body.style.overflow = "hidden";
+    const btnContacto=document.getElementById("btn-contacto");
+    const popup=document.getElementById("popup-contacto");
+    btnContacto.addEventListener("click",()=>{
+      popup.style.display="flex";
+      document.body.style.overflow="hidden";
     });
-
-    popup.addEventListener("click", (e) => {
-      if (e.target === popup) {
-        popup.style.display = "none";
-        document.body.style.overflow = "";
+    popup.addEventListener("click",(e)=>{
+      if(e.target===popup){
+        popup.style.display="none";
+        document.body.style.overflow="";
       }
     });
   </script>
@@ -498,20 +493,18 @@
     </div>
   </div>
   <script>
-    const popup2 = document.getElementById("popup-colaboremos");
-    const openPopup2Buttons = document.querySelectorAll(".open-popup2");
-
-    openPopup2Buttons.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        popup2.style.display = "flex";
-        document.body.style.overflow = "hidden";
+    const popup2=document.getElementById("popup-colaboremos");
+    const openPopup2Buttons=document.querySelectorAll(".open-popup2");
+    openPopup2Buttons.forEach((btn)=>{
+      btn.addEventListener("click",()=>{
+        popup2.style.display="flex";
+        document.body.style.overflow="hidden";
       });
     });
-
-    popup2.addEventListener("click", (e) => {
-      if (e.target === popup2) {
-        popup2.style.display = "none";
-        document.body.style.overflow = "";
+    popup2.addEventListener("click",(e)=>{
+      if(e.target===popup2){
+        popup2.style.display="none";
+        document.body.style.overflow="";
       }
     });
   </script>

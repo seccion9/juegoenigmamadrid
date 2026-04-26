@@ -141,18 +141,16 @@
   </header>
   <a href="./reservas.html" class="btn-reservar-sticky">RESERVAR</a>
   <script>
-    const btnMadridMap = document.querySelector(".btn-madrid-map");
-    const panelMadrid = document.getElementById("panel-madrid");
-    const stickyBtn2 = document.querySelector(".btn-reservar-sticky");
-
-    btnMadridMap.addEventListener("click", () => {
+    const btnMadridMap=document.querySelector(".btn-madrid-map");
+    const panelMadrid=document.getElementById("panel-madrid");
+    const stickyBtn2=document.querySelector(".btn-reservar-sticky");
+    btnMadridMap.addEventListener("click",()=>{
       panelMadrid.classList.add("panel-open");
       stickyBtn2.classList.add("hidden");
       document.body.classList.add("body-no-scroll");
     });
-
-    panelMadrid.addEventListener("click", (e) => {
-      if (!e.target.closest(".panel-madrid-box")) {
+    panelMadrid.addEventListener("click",(e)=>{
+      if(!e.target.closest(".panel-madrid-box")){
         panelMadrid.classList.remove("panel-open");
         stickyBtn2.classList.remove("hidden");
         document.body.classList.remove("body-no-scroll");
@@ -160,11 +158,10 @@
     });
   </script>
   <script>
-    const burger = document.querySelector(".burger");
-    const mobileMenu = document.querySelector(".mobile-menu");
-    const stickyBtn = document.querySelector(".btn-reservar-sticky");
-
-    burger.addEventListener("click", () => {
+    const burger=document.querySelector(".burger");
+    const mobileMenu=document.querySelector(".mobile-menu");
+    const stickyBtn=document.querySelector(".btn-reservar-sticky");
+    burger.addEventListener("click",()=>{
       burger.classList.toggle("open");
       mobileMenu.classList.toggle("open");
       stickyBtn.classList.toggle("hidden");
@@ -297,15 +294,9 @@
       <script src="https://unpkg.com/@adamdehaven/vue-custom-tooltip" defer></script>
       <script src="https://js.stripe.com/v3/" defer></script>
       <script>
-        localStorage.setItem(
-          "data-integration-aion-uuid",
-          "6dbb1591-d0f6-4566-a5d5-0e4344768619"
-        );
-        localStorage.setItem(
-          "data-integration-aion-url",
-          "https://madrid.gestorempresas.es"
-        );
-        localStorage.setItem("data-integration-aion-locale", "es_ES");
+        localStorage.setItem("data-integration-aion-uuid","6dbb1591-d0f6-4566-a5d5-0e4344768619");
+        localStorage.setItem("data-integration-aion-url","https://madrid.gestorempresas.es");
+        localStorage.setItem("data-integration-aion-locale","es_ES");
       </script>
       <link href="https://calendar.gestorempresas.es/cleaner.css" rel="stylesheet" />
       <link href="https://calendar.gestorempresas.es/css/chunk-vendors.css" rel="stylesheet" />
@@ -445,21 +436,18 @@
     </div>
   </div>
   <script>
-    const panelDonde = document.getElementById("panel-donde");
-    const cerrarDonde = document.querySelector(".panel-donde__close");
-
-    document.querySelectorAll(".btn-donde-estamos").forEach((btn) => {
-      btn.addEventListener("click", () => {
+    const panelDonde=document.getElementById("panel-donde");
+    const cerrarDonde=document.querySelector(".panel-donde__close");
+    document.querySelectorAll(".btn-donde-estamos").forEach((btn)=>{
+      btn.addEventListener("click",()=>{
         panelDonde.classList.add("panel-donde--open");
       });
     });
-
-    cerrarDonde.addEventListener("click", () => {
+    cerrarDonde.addEventListener("click",()=>{
       panelDonde.classList.remove("panel-donde--open");
     });
-
-    panelDonde.addEventListener("click", (e) => {
-      if (e.target === panelDonde) {
+    panelDonde.addEventListener("click",(e)=>{
+      if(e.target===panelDonde){
         panelDonde.classList.remove("panel-donde--open");
       }
     });

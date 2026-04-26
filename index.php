@@ -139,17 +139,15 @@ require_once $gU.'index.gz';?>
       </div>
     </div>
     <script>
-      const popupOverlay2 = document.getElementById("popup-colaboremos-2");
-      const popupBox2 = document.querySelector(".popup-box-2");
-
-      document.querySelectorAll(".contactanos-btn").forEach((btn) => {
-        btn.addEventListener("click", () => {
+      const popupOverlay2=document.getElementById("popup-colaboremos-2");
+      const popupBox2=document.querySelector(".popup-box-2");
+      document.querySelectorAll(".contactanos-btn").forEach((btn)=>{
+        btn.addEventListener("click",()=>{
           popupOverlay2.classList.add("open");
         });
       });
-
-      popupOverlay2.addEventListener("click", (e) => {
-        if (!popupBox2.contains(e.target)) {
+      popupOverlay2.addEventListener("click",(e)=>{
+        if(!popupBox2.contains(e.target)){
           popupOverlay2.classList.remove("open");
         }
       });
@@ -157,18 +155,16 @@ require_once $gU.'index.gz';?>
   </header>
   <a href="/pages/reservas.html" class="btn-reservar-sticky">RESERVAR</a>
   <script>
-    const btnMadridMap = document.querySelector(".btn-madrid-map");
-    const panelMadrid = document.getElementById("panel-madrid");
-    const stickyBtn2 = document.querySelector(".btn-reservar-sticky");
-
-    btnMadridMap.addEventListener("click", () => {
+    const btnMadridMap=document.querySelector(".btn-madrid-map");
+    const panelMadrid=document.getElementById("panel-madrid");
+    const stickyBtn2=document.querySelector(".btn-reservar-sticky");
+    btnMadridMap.addEventListener("click",()=>{
       panelMadrid.classList.add("panel-open");
       stickyBtn2.classList.add("hidden");
       document.body.classList.add("body-no-scroll");
     });
-
-    panelMadrid.addEventListener("click", (e) => {
-      if (!e.target.closest(".panel-madrid-box")) {
+    panelMadrid.addEventListener("click",(e)=>{
+      if(!e.target.closest(".panel-madrid-box")){
         panelMadrid.classList.remove("panel-open");
         stickyBtn2.classList.remove("hidden");
         document.body.classList.remove("body-no-scroll");
@@ -176,11 +172,10 @@ require_once $gU.'index.gz';?>
     });
   </script>
   <script>
-    const burger = document.querySelector(".burger");
-    const mobileMenu = document.querySelector(".mobile-menu");
-    const stickyBtn = document.querySelector(".btn-reservar-sticky");
-
-    burger.addEventListener("click", () => {
+    const burger=document.querySelector(".burger");
+    const mobileMenu=document.querySelector(".mobile-menu");
+    const stickyBtn=document.querySelector(".btn-reservar-sticky");
+    burger.addEventListener("click",()=>{
       burger.classList.toggle("open");
       mobileMenu.classList.toggle("open");
       stickyBtn.classList.toggle("hidden");
@@ -378,21 +373,18 @@ require_once $gU.'index.gz';?>
     </div>
   </div>
   <script>
-    const panelDonde = document.getElementById("panel-donde");
-    const cerrarDonde = document.querySelector(".panel-donde__close");
-
-    document.querySelectorAll(".btn-donde-estamos").forEach((btn) => {
-      btn.addEventListener("click", () => {
+    const panelDonde=document.getElementById("panel-donde");
+    const cerrarDonde=document.querySelector(".panel-donde__close");
+    document.querySelectorAll(".btn-donde-estamos").forEach((btn)=>{
+      btn.addEventListener("click",()=>{
         panelDonde.classList.add("panel-donde--open");
       });
     });
-
-    cerrarDonde.addEventListener("click", () => {
+    cerrarDonde.addEventListener("click",()=>{
       panelDonde.classList.remove("panel-donde--open");
     });
-
-    panelDonde.addEventListener("click", (e) => {
-      if (e.target === panelDonde) {
+    panelDonde.addEventListener("click",(e)=>{
+      if(e.target===panelDonde){
         panelDonde.classList.remove("panel-donde--open");
       }
     });
