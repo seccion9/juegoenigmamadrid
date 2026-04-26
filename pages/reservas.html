@@ -16,6 +16,7 @@
     })(window, document, "script", "dataLayer", "GTM-KRX3VB6");
   </script>
   <!-- End Google Tag Manager -->
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
@@ -26,26 +27,14 @@
   <title>Juego Enigma Madrid | Escape Room</title>
   <link rel="stylesheet" href="../style.css" />
   <link rel="icon" href="../assets/ico/favicon.ico" type="image/x-icon" />
-
-  <!-- AION WIDGET CSS -->
-  <link href="https://calendar.gestorempresas.es/cleaner.css" rel="stylesheet" />
-  <link href="https://calendar.gestorempresas.es/css/chunk-vendors.css" rel="stylesheet" />
-  <link href="https://calendar.gestorempresas.es/css/app.css" rel="stylesheet" />
-
-  <!-- AION dependencies -->
-  <script src="https://unpkg.com/@adamdehaven/vue-custom-tooltip"></script>
-  <script src="https://js.stripe.com/v3/"></script>
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
   <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRX3VB6" height="0" width="0"
       style="display: none; visibility: hidden"></iframe>
   </noscript>
-  <!-- End Google Tag Manager -->
 
-  <!-- HEADER COMPLETO -->
   <header>
     <div>
       <ul>
@@ -53,15 +42,14 @@
           <a href="/pages/reservas.html"><img src="../assets/svg/spain.svg" alt="Icono bandera de España" /></a>
         </li>
         <li>
-          <a href="/ingles/reservas-en.html"><img src="../assets/svg/usa.svg"
-              alt="Icono bandera de Estados Unidos" /></a>
+          <a href="/ingles/reservas-en.html"><img src="../assets/svg/usa.svg" alt="Icono bandera de Estados Unidos" /></a>
         </li>
       </ul>
     </div>
 
     <nav>
       <a href="/">
-        <img src="/assets/img/logo-enigma.png" alt="Logo Enigma" />
+        <img src="/assets/img/logo.webp" alt="Logo Enigma" />
       </a>
 
       <div class="madrid btn-madrid-map">
@@ -74,7 +62,7 @@
         <li><a href="./paraRegalar.html">Para regalar</a></li>
         <li><a href="./empresas.html">Empresas</a></li>
         <li><a href="../colaboremos.html">Colaboremos</a></li>
-        <li><a href="./reservas.html" class="reservas">Reservar</a></li>
+        <li><a href="./reservas.html" class="reservas orange">Reservar</a></li>
       </ul>
 
       <div class="menu-toggle">
@@ -102,16 +90,14 @@
       </div>
     </nav>
 
-    <!-- PANEL MADRID -->
     <div id="panel-madrid" class="panel-madrid-modal">
       <div class="panel-madrid-box">
         <a href="../colaboremos.html#colaboremos-separador-1">
-          <img src="../assets/img/cityMap.webp" alt="Mapa Enigma España" class="mapa-madrid-img" />
+          <img src="../assets/img/cityMap.webp" alt="Mapa Enigma España" class="mapa-madrid-img" loading="lazy" />
         </a>
       </div>
     </div>
 
-    <!-- POPUP CONTACTO -->
     <div id="popup-colaboremos-2" class="popup-overlay-2">
       <div class="popup-box-2">
         <h2>Contactanos</h2>
@@ -124,35 +110,35 @@
           <div>
             <a href="https://www.tripadvisor.es/Attraction_Review-g187514-d9752255-Reviews-Juego_Enigma-Madrid.html"
               target="_blank">
-              <img class="trip-icon-2" src="../assets/svg/tripadvisor-white.svg" alt="Logo Tripadvisor" />
+              <img class="trip-icon-2" src="../assets/svg/tripadvisor-white.svg" alt="Logo Tripadvisor" loading="lazy" />
             </a>
 
             <a href="https://www.instagram.com/juegoenigma" target="_blank">
-              <img class="ins-icon-2" src="../assets/svg/instagram-white.svg" alt="Logo Instagram" />
+              <img class="ins-icon-2" src="../assets/svg/instagram-white.svg" alt="Logo Instagram" loading="lazy" />
             </a>
           </div>
         </div>
       </div>
     </div>
-
     <script>
       const popupOverlay2 = document.getElementById("popup-colaboremos-2");
       const popupBox2 = document.querySelector(".popup-box-2");
+
       document.querySelectorAll(".contactanos-btn").forEach((btn) => {
-        btn.addEventListener("click", () =>
-          popupOverlay2.classList.add("open")
-        );
+        btn.addEventListener("click", () => {
+          popupOverlay2.classList.add("open");
+        });
       });
+
       popupOverlay2.addEventListener("click", (e) => {
-        if (!popupBox2.contains(e.target))
+        if (!popupBox2.contains(e.target)) {
           popupOverlay2.classList.remove("open");
+        }
       });
     </script>
   </header>
 
   <a href="./reservas.html" class="btn-reservar-sticky">RESERVAR</a>
-
-  <!-- SCRIPTS DEL HEADER -->
   <script>
     const btnMadridMap = document.querySelector(".btn-madrid-map");
     const panelMadrid = document.getElementById("panel-madrid");
@@ -172,7 +158,6 @@
       }
     });
   </script>
-
   <script>
     const burger = document.querySelector(".burger");
     const mobileMenu = document.querySelector(".mobile-menu");
@@ -185,63 +170,32 @@
     });
   </script>
 
-  <!-- TITULO -->
-  <section class="reservar-title">
-    <h1>Reserva en Enigma Madrid</h1>
-  </section>
-
-  <!-- TEXTOS RESERVA -->
-  <section class="reservar-contenedor">
-    <div>
-      <h3>¿NO SABEÍS CUANTOS SEREÍS?</h3>
-      <p>
-        Reservad para dos personas o los que sepáis que seréis seguro y pagad
-        la diferencia cuando vengáis.
-      </p>
-    </div>
-
-    <div>
-      <h3>MENORES DE EDAD</h3>
-      <p>
-        La actividad es realizable y disfrutable para menores siempre y cuando vengan acompañados de un adulto o bien se
-        contrate desde la reserva un monitor que dinamice desde dentro de la sala (+19€)
-      </p>
-    </div>
-
-    <div>
-      <h3>DESCUENTO ENTRE SEMANA</h3>
-      <p>
-        Reserva con tu equipo de mínimo 3 agentes, a través del calendario de la web, una misión de lunes a jueves con
-        el código <span>"TOP_SECRET"</span> y obtendrás 10€ de descuento en el importe de la reserva (descuento NO válido en festivos
-        ni para equipos de 2 agentes).
-      </p>
-    </div>
-
-    <div>
-      <h3>GRUPOS DE 6 AGENTES</h3>
-      <p>No recomendado para grupos que tengan más de una misión a sus espaldas</p>
-    </div>
-
-    <div>
-      <h3>15 MINUTOS ANTES</h3>
-      <p>Se precisará que llegueis 15 minutos antes y que relleneis el formulario de la rgpd que se os enviará en el correo de confirmación</p>
-    </div>
-  </section>
-
-  <!-- AION - CALENDARIO -->
-  <section id="reservasPage" class="reservas-aion">
+  <section class="reservas-aion">
+    <link href="https://calendar.gestorempresas.es/cleaner.css" rel="stylesheet">
+    <link href="https://calendar.gestorempresas.es/css/chunk-vendors.css" rel="stylesheet">
+    <link href="https://calendar.gestorempresas.es/css/app.css" rel="stylesheet">
+    
+    <script>
+      localStorage.setItem('data-integration-aion-uuid', '35b9efe4-7c60-48cd-b208-3ad70e0e3485');
+      localStorage.setItem('data-integration-aion-url', 'https://madrid.gestorempresas.es');
+      localStorage.setItem('data-integration-aion-locale', 'es_ES');
+    </script>
+    
+    <noscript><strong>We're sorry but enigma doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
     <div id="aion-checkout-widget"></div>
+    
+    <script src="https://calendar.gestorempresas.es/js/chunk-vendors.js" defer></script>
+    <script src="https://calendar.gestorempresas.es/js/app.js" defer></script>
   </section>
 
   <a href="https://wa.me/34673423738" target="_blank" class="whatsapp">
-    <img src="../assets/svg/whatsapp.svg" alt="WhatsApp" />
+    <img src="../assets/svg/whatsapp.svg" alt="WhatsApp" loading="lazy" />
   </a>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-naranja">
       <div class="footer-texto">
-        <a href="">REGALA LA<br />EXPERIENCIA</a>
+        <a href="./paraRegalar.html">REGALA LA<br />EXPERIENCIA</a>
         <p>673 423 738</p>
         <p>ADN@ENIGMAMADRID.ES</p>
         <p class="btn-donde-estamos">¿DÓNDE ESTAMOS?</p>
@@ -250,20 +204,20 @@
       <div class="footer-iconos">
         <a href="https://www.tripadvisor.es/Attraction_Review-g187514-d9752255-Reviews-Juego_Enigma-Madrid.html"
           target="_blank">
-          <img src="../assets/svg/tripadvisor.svg" alt="Tripadvisor" />
+          <img src="../assets/svg/tripadvisor.svg" alt="Tripadvisor" loading="lazy" />
         </a>
 
         <a href="https://www.instagram.com/juegoenigma/" target="_blank">
-          <img src="../assets/svg/instagram.svg" alt="Instagram" />
+          <img src="../assets/svg/instagram.svg" alt="Instagram" loading="lazy" />
         </a>
       </div>
     </div>
 
     <div class="footer-negro">
       <a href="#">BLOG</a>
-      <a href="../aviso-legal.html">AVISO LEGAL</a>
-      <a href="../privacidad.html">PRIVACIDAD</a>
-      <a href="../terminos-condiciones.html">TERMINOS Y CONDICIONES</a>
+      <a href="aviso-legal.html">AVISO LEGAL</a>
+      <a href="privacidad.html">PRIVACIDAD</a>
+      <a href="terminos-condiciones.html">TERMINOS Y CONDICIONES</a>
       <a href="/sitemap.xml">SITEMAP</a>
     </div>
   </footer>
@@ -275,7 +229,6 @@
     <p class="btn-donde-estamos">¿DÓNDE ESTAMOS?</p>
   </footer>
 
-  <!-- PANEL DONDE ESTAMOS -->
   <div id="panel-donde" class="panel-donde">
     <div class="panel-donde__box">
       <button class="panel-donde__close">&times;</button>
@@ -284,25 +237,19 @@
       <p class="box-direction">Calle Nuestra Señora del Carmen 7, 28039</p>
 
       <div>
+        <p><img src="../assets/img/metro_line_1.webp" loading="lazy" /> Estrecho (5 min)</p>
+        <p><img src="../assets/img/metro_line_1.webp" loading="lazy" /> Tetuán (5 min)</p>
         <p>
-          <img src="../assets/img/metro_line_1.webp" alt="" /> Estrecho (5
+          <img src="../assets/img/metro_line_7.webp" loading="lazy" /> Francos Rodríguez (10
           min)
-        </p>
-        <p>
-          <img src="../assets/img/metro_line_1.webp" alt="" /> Tetuán (5 min)
-        </p>
-        <p>
-          <img src="../assets/img/metro_line_7.webp" alt="" /> Francos
-          Rodríguez (10 min)
         </p>
       </div>
 
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3632.6362047997254!2d-3.704801223570821!3d40.458420553100154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422900b21de8d5%3A0x8eec68a84be0731c!2sC%2F%20de%20Ntra.%20Sra.%20del%20Carmen%2C%207%2C%20Tetu%C3%A1n%2C%2028039%20Madrid!5e1!3m2!1ses!2ses!4v1763467414714!5m2!1ses!2ses"
-        width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+        width="600" height="450" style="border: 0" loading="lazy"></iframe>
     </div>
   </div>
-
   <script>
     const panelDonde = document.getElementById("panel-donde");
     const cerrarDonde = document.querySelector(".panel-donde__close");
@@ -323,24 +270,6 @@
       }
     });
   </script>
-
-  <!-- AION CONFIG + SCRIPTS -->
-  <script src="https://unpkg.com/@adamdehaven/vue-custom-tooltip"></script>
-  <script src="https://js.stripe.com/v3/"></script>
-  <script>
-    localStorage.setItem('data-integration-aion-uuid', '7a844176-63a3-49a8-9084-c381eac64996');
-    localStorage.setItem('data-integration-aion-url', 'https://madrid.gestorempresas.es');
-    localStorage.setItem('data-integration-aion-locale', 'es_ES');
-  </script>
-  <link href="https://calendar.gestorempresas.es/cleaner.css" rel="stylesheet">
-  <link href="https://calendar.gestorempresas.es/css/chunk-vendors.css" rel="stylesheet">
-  <link href="https://calendar.gestorempresas.es/css/app.css" rel="stylesheet">
-  <noscript><strong>We're sorry but enigma doesn't work properly without JavaScript enabled. Please enable it to
-      continue.</strong></noscript>
-  <div id="aion-checkout-widget"></div>
-  <script src="https://calendar.gestorempresas.es/js/chunk-vendors.js"></script>
-  <script src="https://calendar.gestorempresas.es/js/app.js"></script>
-
 </body>
 
 </html>
