@@ -30,8 +30,24 @@ require_once $gU.'index.gz';?>
     content="escape room Madrid, juego enigma, experiencia escape, enigmas, juegos en equipo, misión inmersiva" />
 
   <title>Juego Enigma Madrid | Escape Room</title>
-  <link rel="preload" as="image" href="./assets/img/home.webp">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" href="./assets/fonts/bankGothic/bank gothic medium bt.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" as="image" href="./assets/img/home.webp" imagesrcset="./assets/img/home-480.webp 480w, ./assets/img/home-768.webp 768w, ./assets/img/home-1024.webp 1024w, ./assets/img/home.webp 1920w" imagesizes="100vw">
+  <style>
+    /* Critical CSS for above-the-fold content */
+    * { padding: 0; margin: 0; box-sizing: border-box; font-family: "BankGothic Medium"; }
+    body { background: url("./assets/img/body-back.webp") repeat fixed; }
+    header { background-image: url(./assets/img/bg_menu.webp); display: flex; border-bottom: 7px solid #ff5f01; padding: 0.5em; position: fixed; top: 0; left: 0; width: 100%; z-index: 10; }
+    header nav { color: white; margin: 0 auto; display: flex; font-size: 18px; }
+    header nav img { height: 64px; width: 216px; margin-right: 2em; }
+    .main-container { height: 80vh; position: relative; background-image: url(./assets/img/home.webp); background-size: cover; overflow: hidden; }
+    @media (max-width: 1024px) { .main-container { background-image: url(./assets/img/home-1024.webp); } }
+    @media (max-width: 768px) { .main-container { background-image: url(./assets/img/home-768.webp); } }
+    @media (max-width: 480px) { .main-container { background-image: url(./assets/img/home-480.webp); } }
+    .reservas-container { position: absolute; bottom: 0px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0em; }
+    .reservas-container a { text-decoration: none; font-size: 35px; color: white; background-color: #ff5f01; padding: 0.235em 5.5em; font-weight: bold; letter-spacing: 1px; display: inline-block; }
+  </style>
+  <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="style.css"></noscript>
   <link rel="icon" href="../assets/ico/favicon.ico" type="image/x-icon" />
 </head>
 

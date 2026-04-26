@@ -22,10 +22,23 @@
     content="Juego Enigma Madrid ofrece aventuras de escape inmersivas para grupos. Pon a prueba tu ingenio, colabora con tu equipo y vive una experiencia única." />
   <meta name="keywords"
     content="escape room Madrid, juego enigma, experiencia escape, enigmas, juegos en equipo, misión inmersiva" />
-    
+
   <title>Juego Enigma Madrid | Escape Room</title>
   <link rel="preload" as="image" href="assets/img/artesano-colaboremos.webp">
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="preload" href="./assets/fonts/bankGothic/bank gothic medium bt.ttf" as="font" type="font/ttf" crossorigin>
+  <style>
+    /* Critical CSS for colaboremos.html */
+    * { padding: 0; margin: 0; box-sizing: border-box; font-family: "BankGothic Medium"; }
+    .body-colaboremos { background-image: url(assets/img/bg_colaboremos.webp); }
+    header { background-image: url(./assets/img/bg_menu.webp); display: flex; border-bottom: 7px solid #ff5f01; padding: 0.5em; position: fixed; top: 0; left: 0; width: 100%; z-index: 10; }
+    header nav { color: white; margin: 0 auto; display: flex; font-size: 18px; }
+    header nav img { height: 64px; width: 216px; margin-right: 2em; }
+    .carrusel-1 { width: 100%; height: 350px; overflow: hidden; position: relative; padding-bottom: 8px; background-color: #ff5f01; margin-top: 6em; }
+    .contenedor-1 { display: flex; width: 300%; height: 100%; animation: deslizar 30s infinite; }
+    @keyframes deslizar { 0%,30% { transform: translateX(0); } 33.33%,63.33% { transform: translateX(-33.33%); } 66.66%,96.66% { transform: translateX(-66.67%); } 100% { transform: translateX(0); } }
+  </style>
+  <link rel="stylesheet" href="./style.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="./style.css"></noscript>
   <link rel="icon" href="../assets/ico/favicon.ico" type="image/x-icon" />
 </head>
 
@@ -47,8 +60,7 @@
       </ul>
     </div>
     <nav>
-      <a href="/"><img src="/assets/img/logo.webp"
-          alt="Logo Enigma" /></a>
+      <a href="/"><img src="/assets/img/logo.webp" alt="Logo Enigma" /></a>
       <div class="madrid btn-madrid-map">
         <p>/MADRID</p>
         <span>+</span>
@@ -106,7 +118,8 @@
           <div>
             <a href="https://www.tripadvisor.es/Attraction_Review-g187514-d9752255-Reviews-Juego_Enigma-Madrid.html"
               target="_blank">
-              <img class="trip-icon-2" src="../assets/svg/tripadvisor-white.svg" alt="Logo Tripadvisor" loading="lazy" />
+              <img class="trip-icon-2" src="../assets/svg/tripadvisor-white.svg" alt="Logo Tripadvisor"
+                loading="lazy" />
             </a>
             <a href="https://www.instagram.com/juegoenigma" target="_blank">
               <img class="ins-icon-2" src="../assets/svg/instagram-white.svg" alt="Logo Instagram" loading="lazy" />
@@ -185,7 +198,8 @@
         <img src="assets/img/iconos-colaboremos.webp" alt="iconos" loading="lazy" />
       </div>
 
-      <img id="colaboremos-separador-1" src="assets/img/icono-llave-colaboremos.webp" alt="icono-llave" loading="lazy" />
+      <img id="colaboremos-separador-1" src="assets/img/icono-llave-colaboremos.webp" alt="icono-llave"
+        loading="lazy" />
 
       <div class="colaboremos-contenedor-2">
         <h2>FRANQUICIA ENIGMA</h2>

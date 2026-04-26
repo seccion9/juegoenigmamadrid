@@ -22,9 +22,11 @@
     content="Juego Enigma Madrid ofrece aventuras de escape inmersivas para grupos. Pon a prueba tu ingenio, colabora con tu equipo y vive una experiencia única." />
   <meta name="keywords"
     content="escape room Madrid, juego enigma, experiencia escape, enigmas, juegos en equipo, misión inmersiva" />
-    
+
   <title>Juego Enigma Madrid | Escape Room</title>
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="preload" href="../assets/fonts/bankGothic/bank gothic medium bt.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="../style.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../style.css"></noscript>
   <link rel="icon" href="../assets/ico/favicon.ico" type="image/x-icon" />
 </head>
 
@@ -46,8 +48,7 @@
       </ul>
     </div>
     <nav>
-      <a href="/"><img src="/assets/img/logo.webp"
-          alt="Logo Enigma" /></a>
+      <a href="/"><img src="/assets/img/logo.webp" alt="Logo Enigma" /></a>
       <div class="madrid btn-madrid-map">
         <p>/MADRID</p>
         <span>+</span>
@@ -105,7 +106,8 @@
           <div>
             <a href="https://www.tripadvisor.es/Attraction_Review-g187514-d9752255-Reviews-Juego_Enigma-Madrid.html"
               target="_blank">
-              <img class="trip-icon-2" src="../assets/svg/tripadvisor-white.svg" alt="Logo Tripadvisor" loading="lazy" />
+              <img class="trip-icon-2" src="../assets/svg/tripadvisor-white.svg" alt="Logo Tripadvisor"
+                loading="lazy" />
             </a>
             <a href="https://www.instagram.com/juegoenigma" target="_blank">
               <img class="ins-icon-2" src="../assets/svg/instagram-white.svg" alt="Logo Instagram" loading="lazy" />
@@ -186,7 +188,8 @@
   </section>
   <section class="opciones-section">
     <div class="opciones">
-      <img src="../assets/img/cable_izqiuerdo.webp" alt="Decoración de cable naranja" class="opciones-img" loading="lazy" />
+      <img src="../assets/img/cable_izqiuerdo.webp" alt="Decoración de cable naranja" class="opciones-img"
+        loading="lazy" />
       <div class="opciones-texto">
         <h2>Diferentes opciones de regalo</h2>
         <p>
@@ -195,7 +198,8 @@
         </p>
       </div>
       <section class="bono-section">
-        <img src="../assets/img/bono_confidencial.webp" alt="Imagen con carpeta confidencial" class="bono-img" loading="lazy" />
+        <img src="../assets/img/bono_confidencial.webp" alt="Imagen con carpeta confidencial" class="bono-img"
+          loading="lazy" />
         <div class="bono-contenido">
           <h3>BONO REGALO</h3>
           <p>
@@ -391,14 +395,14 @@
     const d1 = document.getElementById("jugadores");
     const t1 = document.getElementById("precio-total-1");
     const b1 = document.getElementById("btn-comprar-1");
-    if(d1 && t1) d1.addEventListener("change", () => t1.textContent = d1.value + "€");
-    if(b1) b1.addEventListener("click", () => window.location.href = '#');
+    if (d1 && t1) d1.addEventListener("change", () => t1.textContent = d1.value + "€");
+    if (b1) b1.addEventListener("click", () => window.location.href = '#');
 
     const d2 = document.getElementById("jugadores2");
     const t2 = document.getElementById("precio-total-2");
     const b2 = document.getElementById("btn-comprar-2");
-    if(d2 && t2) d2.addEventListener("change", () => t2.textContent = d2.value + "€");
-    if(b2) b2.addEventListener("click", () => window.location.href = '#');
+    if (d2 && t2) d2.addEventListener("change", () => t2.textContent = d2.value + "€");
+    if (b2) b2.addEventListener("click", () => window.location.href = '#');
   </script>
 </body>
 

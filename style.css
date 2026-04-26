@@ -1,14 +1,16 @@
 @font-face {
   font-family: "BankGothic Medium";
-  src: url("../assets/fonts/bankGothic/bank gothic medium bt.ttf")
+  src: url("./assets/fonts/bankGothic/bank gothic medium bt.ttf")
     format("truetype");
   font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "BankGothic Medium";
-  src: url("../assets/fonts/bankGothic/BankGothic Bold.ttf") format("truetype");
+  src: url("./assets/fonts/bankGothic/BankGothic Bold.ttf") format("truetype");
   font-weight: 900;
+  font-display: swap;
 }
 
 @font-face {
@@ -16,6 +18,7 @@
   src: url("./assets/fonts/Montserrat/Montserrat-Regular.ttf")
     format("truetype");
   font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
@@ -32,13 +35,15 @@
     url("https://db.onlinewebfonts.com/t/6ab5d96e147141b4a169d5e33df14dc5.svg#BaseMonoWideReg Regular")
       format("svg");
   font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "AlternateGothic";
-  src: url("../assets/fonts/alternategothic/7047-fontps.ttf") format("truetype");
+  src: url("./assets/fonts/alternategothic/7047-fontps.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 * {
