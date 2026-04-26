@@ -460,20 +460,6 @@
       </div>
     </div>
   </div>
-  <script>
-    const btnContacto=document.getElementById("btn-contacto");
-    const popup=document.getElementById("popup-contacto");
-    btnContacto.addEventListener("click",()=>{
-      popup.style.display="flex";
-      document.body.style.overflow="hidden";
-    });
-    popup.addEventListener("click",(e)=>{
-      if(e.target===popup){
-        popup.style.display="none";
-        document.body.style.overflow="";
-      }
-    });
-  </script>
 
   <!-- POPUP 2-->
   <div id="popup-colaboremos" class="popup-overlay-2">
@@ -493,6 +479,21 @@
     </div>
   </div>
   <script>
+    const btnContacto=document.getElementById("btn-contacto");
+    const popup=document.getElementById("popup-contacto");
+    btnContacto.addEventListener("click",()=>{
+      popup.style.display="flex";
+      document.body.style.overflow="hidden";
+    });
+    popup.addEventListener("click",(e)=>{
+      if(e.target===popup){
+        popup.style.display="none";
+        document.body.style.overflow="";
+      }
+    });
+  </script>
+
+  <script>
     const popup2=document.getElementById("popup-colaboremos");
     const openPopup2Buttons=document.querySelectorAll(".open-popup2");
     openPopup2Buttons.forEach((btn)=>{
@@ -509,5 +510,4 @@
     });
   </script>
 </body>
-
 </html>

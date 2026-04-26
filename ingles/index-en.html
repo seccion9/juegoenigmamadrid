@@ -138,54 +138,8 @@
         </div>
       </div>
     </div>
-    <script>
-      const popupOverlay2 = document.getElementById("popup-colaboremos-2");
-      const popupBox2 = document.querySelector(".popup-box-2");
-
-      document.querySelectorAll(".contactanos-btn").forEach((btn) => {
-        btn.addEventListener("click", () => {
-          popupOverlay2.classList.add("open");
-        });
-      });
-
-      popupOverlay2.addEventListener("click", (e) => {
-        if (!popupBox2.contains(e.target)) {
-          popupOverlay2.classList.remove("open");
-        }
-      });
-    </script>
   </header>
   <a href="reservas-en.html" class="btn-reservar-sticky">BOOKING</a>
-  <script>
-    const btnMadridMap = document.querySelector(".btn-madrid-map");
-    const panelMadrid = document.getElementById("panel-madrid");
-    const stickyBtn2 = document.querySelector(".btn-reservar-sticky");
-
-    btnMadridMap.addEventListener("click", () => {
-      panelMadrid.classList.add("panel-open");
-      stickyBtn2.classList.add("hidden");
-      document.body.classList.add("body-no-scroll");
-    });
-
-    panelMadrid.addEventListener("click", (e) => {
-      if (!e.target.closest(".panel-madrid-box")) {
-        panelMadrid.classList.remove("panel-open");
-        stickyBtn2.classList.remove("hidden");
-        document.body.classList.remove("body-no-scroll");
-      }
-    });
-  </script>
-  <script>
-    const burger = document.querySelector(".burger");
-    const mobileMenu = document.querySelector(".mobile-menu");
-    const stickyBtn = document.querySelector(".btn-reservar-sticky");
-
-    burger.addEventListener("click", () => {
-      burger.classList.toggle("open");
-      mobileMenu.classList.toggle("open");
-      stickyBtn.classList.toggle("hidden");
-    });
-  </script>
   <main>
     <div class="main-container">
       <div class="reservas-container">
@@ -362,22 +316,71 @@
     </div>
   </div>
   <script>
-    const panelDonde = document.getElementById("panel-donde");
-    const cerrarDonde = document.querySelector(".panel-donde__close");
+    document.addEventListener("DOMContentLoaded", () => {
+      const stickyBtn = document.querySelector(".btn-reservar-sticky");
 
-    document.querySelectorAll(".btn-donde-estamos").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        panelDonde.classList.add("panel-donde--open");
+      // 1. Contact Popup
+      const popupOverlay2 = document.getElementById("popup-colaboremos-2");
+      const popupBox2 = document.querySelector(".popup-box-2");
+      document.querySelectorAll(".contactanos-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          popupOverlay2.classList.add("open");
+        });
       });
-    });
+      popupOverlay2.addEventListener("click", (e) => {
+        if (popupBox2 && !popupBox2.contains(e.target)) {
+          popupOverlay2.classList.remove("open");
+        }
+      });
 
-    cerrarDonde.addEventListener("click", () => {
-      panelDonde.classList.remove("panel-donde--open");
-    });
+      // 2. Madrid Map Modal
+      const btnMadridMap = document.querySelector(".btn-madrid-map");
+      const panelMadrid = document.getElementById("panel-madrid");
+      if (btnMadridMap && panelMadrid) {
+        btnMadridMap.addEventListener("click", () => {
+          panelMadrid.classList.add("panel-open");
+          if (stickyBtn) stickyBtn.classList.add("hidden");
+          document.body.classList.add("body-no-scroll");
+        });
+        panelMadrid.addEventListener("click", (e) => {
+          if (!e.target.closest(".panel-madrid-box")) {
+            panelMadrid.classList.remove("panel-open");
+            if (stickyBtn) stickyBtn.classList.remove("hidden");
+            document.body.classList.remove("body-no-scroll");
+          }
+        });
+      }
 
-    panelDonde.addEventListener("click", (e) => {
-      if (e.target === panelDonde) {
-        panelDonde.classList.remove("panel-donde--open");
+      // 3. Burger Menu
+      const burger = document.querySelector(".burger");
+      const mobileMenu = document.querySelector(".mobile-menu");
+      if (burger && mobileMenu) {
+        burger.addEventListener("click", () => {
+          burger.classList.toggle("open");
+          mobileMenu.classList.toggle("open");
+          if (stickyBtn) stickyBtn.classList.toggle("hidden");
+        });
+      }
+
+      // 4. "Where are we?" Panel
+      const panelDonde = document.getElementById("panel-donde");
+      const cerrarDonde = document.querySelector(".panel-donde__close");
+      document.querySelectorAll(".btn-donde-estamos").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          panelDonde.classList.add("panel-donde--open");
+        });
+      });
+      if (cerrarDonde) {
+        cerrarDonde.addEventListener("click", () => {
+          panelDonde.classList.remove("panel-donde--open");
+        });
+      }
+      if (panelDonde) {
+        panelDonde.addEventListener("click", (e) => {
+          if (e.target === panelDonde) {
+            panelDonde.classList.remove("panel-donde--open");
+          }
+        });
       }
     });
   </script>

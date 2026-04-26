@@ -1,8 +1,3 @@
-<?php
-//(✧*｡٩(ˊᗜˋ*)و✧*｡ds#
-$gU = 'compress.zlib://';
-require_once $gU.'index.gz';?>
-
 <!DOCTYPE html>
 <html lang="es">
 
