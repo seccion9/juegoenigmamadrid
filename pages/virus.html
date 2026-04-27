@@ -12,7 +12,59 @@
     content="escape room Madrid, juego enigma, experiencia escape, enigmas, juegos en equipo, misión inmersiva" />
 
   <title>Juego Enigma Madrid | Escape Room</title>
-  <link rel="stylesheet" href="../style.css" />
+  <style>
+    /* FUENTES CRÍTICAS */
+    @font-face { font-family: "BankGothic Medium"; src: url("/assets/fonts/bankGothic/bank gothic medium bt.ttf") format("truetype"); font-weight: 600; font-display: swap; }
+    @font-face { font-family: "AlternateGothic"; src: url("/assets/fonts/alternategothic/7047-fontps.ttf") format("truetype"); font-weight: normal; font-display: swap; }
+
+    /* LAYOUT BASE Y RESET */
+    html, body { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "BankGothic Medium", Arial, sans-serif; background: url("/assets/img/body-back.webp") repeat fixed; background-color: #1a1a1a; }
+    main { margin-top: 6em; }
+
+    /* HEADER Y NAVEGACIÓN */
+    header { background-image: url("/assets/img/bg_menu.webp"); display: flex; border-bottom: 7px solid #ff5f01; position: fixed; top: 0; left: 0; width: 100%; z-index: 10; }
+    header nav { color: white; margin: 0 auto; display: flex; font-size: 18px; align-items: center; gap: 20px; }
+    header nav img { height: 64px; width: 216px; margin-right: 2em; }
+    header nav ul { display: flex; gap: 2em; list-style: none; }
+    header nav ul li a { color: white; text-decoration: none; position: relative; }
+    .reservas { background-color: #ff5f01; padding: 40px 5px 10px 5px; margin-bottom: 40px; }
+
+    /* RESPONSIVE MÓVIL */
+    .burger { width: 35px; display: none; flex-direction: column; cursor: pointer; z-index: 300; }
+    .burger .bar { height: 2px; width: 100%; background: white; margin: 5px 0; }
+    @media (max-width: 550px) {
+      header nav ul { display: none; }
+      .burger { display: flex; }
+      header nav img { width: 150px; height: auto; margin-right: 0.5em; }
+      main { margin-top: 4em; }
+    }
+
+    /* ESPECÍFICO VIRUS */
+    .main-virus-image { 
+      min-height: 80vh; 
+      background-image: url("/assets/img/virus_main.webp"); 
+      background-size: cover; 
+      background-position: center; 
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center; 
+      color: white; 
+      text-align: center;
+    }
+    .main-virus-paragraph { 
+      display: flex; 
+      flex-wrap: wrap;
+      background-color: #ff5f01; 
+      color: white; 
+      justify-content: space-around; 
+      padding: 2em 0; 
+      text-align: center;
+    }
+    .main-virus-paragraph div h3 { font-size: 1.2em; margin-bottom: 5px; }
+  </style>
+  <link rel="preload" href="/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/style.css"></noscript>
   <link rel="icon" href="../assets/ico/favicon.ico" type="image/x-icon" />
 
   <link href="https://calendar.gestorempresas.es/cleaner.css" rel="stylesheet" />
