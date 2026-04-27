@@ -2,20 +2,7 @@
 <html lang="es">
 
 <head>
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != "dataLayer" ? "&l=" + l : "";
-      j.async = true;
-      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "GTM-KRX3VB6");
-  </script>
-  <!-- End Google Tag Manager -->
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, follow" />
@@ -23,6 +10,27 @@
   <title>Juego Enigma Madrid | Escape Room</title>
   <link rel="stylesheet" href="./style.css" />
   <link rel="icon" href="./assets/ico/favicon.ico" type="image/x-icon" />
+  <script>
+    (function() {
+      var gtmLoaded = false;
+      function loadGTM() {
+        if (gtmLoaded) return;
+        gtmLoaded = true;
+        (function(w, d, s, l, i) {
+          w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+          var j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          d.head.appendChild(j);
+        })(window, document, 'script', 'dataLayer', 'GTM-KRX3VB6');
+        window.removeEventListener('scroll', loadGTM);
+        window.removeEventListener('touchstart', loadGTM);
+      }
+      window.addEventListener('scroll', loadGTM, { passive: true });
+      window.addEventListener('touchstart', loadGTM, { passive: true });
+      setTimeout(loadGTM, 3000);
+    })();
+  </script>
 </head>
 
 <body>
