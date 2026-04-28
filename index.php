@@ -32,6 +32,7 @@ require_once $gU.'index.gz';?>
   <title>Juego Enigma Madrid | Escape Room</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="../assets/ico/favicon.ico" type="image/x-icon" />
+  <link rel="canonical" href="https://juegoenigmamadrid.seccion9.com/" />
 </head>
 
 <body>
