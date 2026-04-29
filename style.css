@@ -200,6 +200,10 @@ main {
   margin-top: 6em;
 }
 
+button {
+  cursor: pointer;
+}
+
 .reservas {
   color: white;
   text-decoration: none;
