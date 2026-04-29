@@ -310,14 +310,13 @@ require_once $gU.'index.gz';?>
       </section>
     </section>
   </main>
-  <a href="https://wa.me/34673423738" target="_blank" class="whatsapp"><img src="../assets/svg/whatsapp.svg"
-      alt="WhatsApp" /></a>
+   <a href="https://wa.me/34936941824?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20informaci%C3%B3n%20sobre%20Enigma%20Madrid" target="_blank" class="whatsapp"><img src="../assets/svg/whatsapp.svg" alt="WhatsApp" /></a>
   <footer class="footer">
     <div class="footer-naranja">
       <div class="footer-texto">
         <a href="./pages/paraRegalar.html">REGALA LA<br />EXPERIENCIA</a>
-        <p>673 423 738</p>
-        <p>ADN@ENIGMAMADRID.ES</p>
+        <p>93 142 66 38</p>
+        <p>clientes@juegoenigma.es</p>
         <p class="btn-donde-estamos">¿DÓNDE ESTAMOS?</p>
       </div>
       <div class="footer-iconos">
