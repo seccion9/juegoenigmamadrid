@@ -3622,7 +3622,8 @@ p {
 
 .body-asesino {
   background-image: url(assets/img/bg_colaboremos.webp);
-  margin: 7% 15%;
+  width: 80%;
+  margin: auto;
   padding: 0;
   box-sizing: border-box;
   margin-bottom: 15%;
@@ -6850,7 +6851,8 @@ p {
 /*RESPONSIVE ASESINO KEYLOCK CITY*/
 @media (max-width: 550px) {
   .body-asesino {
-    margin: 0 0;
+    margin: auto;
+    width: 100%;
     padding: 0;
     overflow-x: hidden;
   }
@@ -6896,11 +6898,16 @@ p {
 
   .descripcion-negra-contenido {
     transform: skew(0deg, 4deg);
+    padding: 0px;
   }
+
 
   .descripcion-negra-contenido p {
     font-size: 15px;
     letter-spacing: 0;
+    margin-top: 0;
+    margin-bottom: 15px;
+    margin: auto;
   }
 
   .descripcion-negra-contenido b {
@@ -7096,7 +7103,8 @@ p {
 
 @media (min-width: 551px) and (max-width: 770px) {
   .body-asesino {
-    margin: 0 0;
+    margin: auto;
+    width: 100%;
   }
 
   .titulo-asesino h2 {
@@ -7137,11 +7145,16 @@ p {
 
   .descripcion-negra-contenido {
     transform: skew(0deg, 4deg);
+    padding: 0px;
   }
+
 
   .descripcion-negra-contenido p {
     font-size: 15px;
     letter-spacing: 0;
+    margin-top: 0;
+    margin-bottom: 15px;
+    margin: auto;
   }
 
   .descripcion-negra-contenido b {
@@ -7336,7 +7349,8 @@ p {
 
 @media (min-width: 771px) and (max-width: 1000px) {
   .body-asesino {
-    margin: 0 0;
+    margin: auto;
+    width: 100%;
   }
 
   .titulo-asesino h2 {
@@ -7359,14 +7373,17 @@ p {
     padding: 30px 15px;
     transform: skew(0deg, -4deg);
   }
-
-  .descripcion-negra-contenido {
+    .descripcion-negra-contenido {
     transform: skew(0deg, 4deg);
+    padding: 0px;
   }
 
   .descripcion-negra-contenido p {
     font-size: 20px;
     letter-spacing: 0;
+    margin-top: 0;
+    margin-bottom: 15px;
+    margin: auto;
   }
 
   .descripcion-negra-contenido b {
@@ -7523,7 +7540,8 @@ p {
 
 @media (min-width: 1001px) and (max-width: 1200px) {
   .body-asesino {
-    margin: 0 0;
+    margin: auto;
+    width: 100%;
   }
 
   .titulo-asesino h2 {
@@ -7549,11 +7567,16 @@ p {
 
   .descripcion-negra-contenido {
     transform: skew(0deg, 4deg);
+    padding: 0px;
   }
+
 
   .descripcion-negra-contenido p {
     font-size: 20px;
     letter-spacing: 0;
+    margin-top: 0;
+    margin-bottom: 15px;
+    margin: auto;
   }
 
   .descripcion-negra-contenido b {
@@ -7710,7 +7733,7 @@ p {
 
 @media (min-width: 1201px) and (max-width: 1440px) {
   .body-asesino {
-    margin: 0 3%;
+    margin: auto;
   }
 
   .titulo-asesino h2 {
@@ -7736,11 +7759,16 @@ p {
 
   .descripcion-negra-contenido {
     transform: skew(0deg, 4deg);
+    padding: 0px;
   }
+
 
   .descripcion-negra-contenido p {
     font-size: 20px;
     letter-spacing: 0;
+    margin-top: 0;
+    margin-bottom: 15px;
+    margin: auto;
   }
 
   .descripcion-negra-contenido b {

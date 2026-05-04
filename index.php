@@ -31,7 +31,7 @@ require_once $gU.'index.gz';?>
 
   <title>Juego Enigma Madrid | Escape Room</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="../assets/ico/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="assets/ico/favicon.ico" type="image/x-icon" />
   <link rel="canonical" href="https://juegoenigmamadrid.es/" />
 </head>
 
@@ -63,12 +63,12 @@ require_once $gU.'index.gz';?>
           <a href="/" class="orange">Escape Room</a>
         </li>
         <li>
-          <a href="./pages/paraRegalar.html">Para regalar</a>
+          <a href="paraRegalar.html">Para regalar</a>
         </li>
-        <li><a href="./pages/empresas.html">Empresas</a></li>
+        <li><a href="empresas.html">Empresas</a></li>
         <li><a href="colaboremos.html">Colaboremos</a></li>
         <li>
-          <a href="./pages/reservas.html" class="reservas">Reservar</a>
+          <a href="reservas.html" class="reservas">Reservar</a>
         </li>
       </ul>
       <div class="menu-toggle">
@@ -80,23 +80,23 @@ require_once $gU.'index.gz';?>
 
         <div class="mobile-menu">
           <span><a href="/">Escape Room</a></span>
-          <span><a href="./pages/paraRegalar.html">Para Regalar</a></span>
-          <span><a href="./pages/empresas.html">Empresas</a></span>
-          <span><a href="../colaboremos.html">Colaboremos</a></span>
+          <span><a href="paraRegalar.html">Para Regalar</a></span>
+          <span><a href="empresas.html">Empresas</a></span>
+          <span><a href="colaboremos.html">Colaboremos</a></span>
           <span><a href="#" class="contactanos-btn">Contáctanos</a></span>
 
           <div class="flags">
-            <a href="/index.html"><img src="../assets/svg/spain.svg" alt="Icono bandera de España" /></a>
+            <a href="/index.html"><img src="assets/svg/spain.svg" alt="Icono bandera de España" /></a>
             <a href="/ingles/index-en.html"><img src="../assets/svg/usa.svg"
                 alt="Icono bandera de Estados Unidos" /></a>
           </div>
-          <a href="/pages/reservas.html" class="btn-reservar-mobile">RESERVAR</a>
+          <a href="reservas.html" class="btn-reservar-mobile">RESERVAR</a>
         </div>
       </div>
     </nav>
     <div id="panel-madrid" class="panel-madrid-modal">
       <div class="panel-madrid-box">
-        <a href="../colaboremos.html#colaboremos-separador-1"><img src="../assets/img/cityMap.webp"
+        <a href="colaboremos.html#colaboremos-separador-1"><img src="assets/img/cityMap.webp"
             alt="Mapa Enigma España" class="mapa-madrid-img" /></a>
       </div>
     </div>
@@ -113,10 +113,10 @@ require_once $gU.'index.gz';?>
           <div>
             <a href="https://www.tripadvisor.es/Attraction_Review-g187514-d9752255-Reviews-Juego_Enigma-Madrid.html"
               target="_blank">
-              <img class="trip-icon-2" src="../assets/svg/tripadvisor-white.svg" alt="Logo Tripadvisor" />
+              <img class="trip-icon-2" src="assets/svg/tripadvisor-white.svg" alt="Logo Tripadvisor" />
             </a>
             <a href="https://www.instagram.com/juegoenigma" target="_blank">
-              <img class="ins-icon-2" src="../assets/svg/instagram-white.svg" alt="Logo Instagram" />
+              <img class="ins-icon-2" src="assets/svg/instagram-white.svg" alt="Logo Instagram" />
             </a>
           </div>
         </div>
@@ -139,7 +139,7 @@ require_once $gU.'index.gz';?>
       });
     </script>
   </header>
-  <a href="/pages/reservas.html" class="btn-reservar-sticky">RESERVAR</a>
+  <a href="reservas.html" class="btn-reservar-sticky">RESERVAR</a>
   <script>
     const btnMadridMap = document.querySelector(".btn-madrid-map");
     const panelMadrid = document.getElementById("panel-madrid");
@@ -174,9 +174,9 @@ require_once $gU.'index.gz';?>
     <div class="main-container">
       <div class="reservas-container">
         <div class="reservas-container-boton">
-          <img src="./assets/img/cable_izqiuerdo.webp" alt="decoración" />
-          <a href="./pages/reservas.html">RESERVAR</a>
-          <img src="./assets/img/cable_derecho.webp" alt="decoración" />
+          <img src="assets/img/cable_izqiuerdo.webp" alt="decoración" />
+          <a href="reservas.html">RESERVAR</a>
+          <img src="assets/img/cable_derecho.webp" alt="decoración" />
         </div>
         <div class="reservas-container-texto">
           <p>JUEGO DE ESCAPE EN VIVO</p>
@@ -185,14 +185,14 @@ require_once $gU.'index.gz';?>
             Encuentra pistas, resuelve enigmas y escapa en menos de 60
             minutos.
           </p>
-           <img src="./assets/img/flecha_header.png" alt = "Científico con jeringuilla"/>
+           <img src="assets/img/flecha_header.png" alt = "Científico con jeringuilla"/>
         </div>
       </div>
     </div>
     <section class="servicios">
       <article class="servicios-virus">
         <div class="circulo-naranja-virus">
-           <img src="./assets/img/virus_b.webp" alt = "Científico con jeringuilla"/>
+           <img src="assets/img/virus_b.webp" alt = "Científico con jeringuilla"/>
         </div>
         <div class="servicios-virus-contenedor">
           <div class="virus-contenedor-text">
@@ -211,12 +211,12 @@ require_once $gU.'index.gz';?>
             <p><span>MISIÓN DOBLE (2 SALAS):</span> 4-12 AGENTES</p>
             <p><span>PRECIO:</span> Desde 19€ por persona</p>
           </div>
-          <a href="./pages/virus.html" class="virus-contenedor-boton">+ INFO Y RESERVA</a>
+          <a href="virus.html" class="virus-contenedor-boton">+ INFO Y RESERVA</a>
         </div>
       </article>
       <article class="servicios-keylock">
         <div class="circulo-naranja-detective">
-            <img src="./assets/img/virus_a.webp" alt="Detective sin rostro" />
+            <img src="assets/img/virus_a.webp" alt="Detective sin rostro" />
         </div>
         <div class="servicios-keylock-contenedor">
           <div class="virus-contenedor-text">
@@ -236,18 +236,18 @@ require_once $gU.'index.gz';?>
             <p><span>A DOMICILIO:</span> +20 DETECTIVES</p>
             <p><span>PRECIO:</span> 19€ por persona</p>
           </div>
-          <a href="./pages/info-asesino-de-keylock-city.html" class="keylock-contenedor-boton">+ INFO Y RESERVA</a>
+          <a href="info-asesino-de-keylock-city.html" class="keylock-contenedor-boton">+ INFO Y RESERVA</a>
         </div>
       </article>
     </section>
     <section class="retos">
-      <img src="./assets/img/home_icons.webp" alt="Iconos varios de temática Scape Room: reloj, candado, equipo, puerta"
+      <img src="assets/img/home_icons.webp" alt="Iconos varios de temática Scape Room: reloj, candado, equipo, puerta"
         class="collage" />
       <section class="retos-container">
         <div class="retos-container-1">
-          <img src="./assets/img/box-01.webp" alt="Grupo de personas jugando a escape room" class="equipo" />
+          <img src="assets/img/box-01.webp" alt="Grupo de personas jugando a escape room" class="equipo" />
           <div>
-            <img src="./assets/img/mini_hexagon_01.webp" alt="" />
+            <img src="assets/img/mini_hexagon_01.webp" alt="" />
             <div>
               <h3>¿Te atreves?</h3>
               <p>
@@ -261,7 +261,7 @@ require_once $gU.'index.gz';?>
         </div>
         <div class="retos-container-2">
           <div>
-            <img src="./assets/img/mini_hexagon_02.webp" alt="" />
+            <img src="assets/img/mini_hexagon_02.webp" alt="" />
             <div>
               <h3>La unión hace la fuerza</h3>
               <p>
@@ -273,12 +273,12 @@ require_once $gU.'index.gz';?>
               </p>
             </div>
           </div>
-          <img src="./assets/img/box-02.webp" alt="Contador con 59 minutos y 59 segundos" class="contador" />
+          <img src="assets/img/box-02.webp" alt="Contador con 59 minutos y 59 segundos" class="contador" />
         </div>
         <div class="retos-container-1">
-          <img src="./assets/img/box-03.webp" alt="Manos uniendo engranajes" class="engranajes" />
+          <img src="assets/img/box-03.webp" alt="Manos uniendo engranajes" class="engranajes" />
           <div>
-            <img src="./assets/img/mini_hexagon_03.webp" alt="" />
+            <img src="assets/img/mini_hexagon_03.webp" alt="" />
             <div>
               <h3 class="engranaje">Sé protagonista</h3>
               <p>
@@ -293,7 +293,7 @@ require_once $gU.'index.gz';?>
         </div>
         <div class="retos-container-2">
           <div>
-            <img src="./assets/img/mini_hexagon_04.webp" alt="" />
+            <img src="assets/img/mini_hexagon_04.webp" alt="" />
             <div>
               <h3 class="laberinto">Diversión ante todo</h3>
               <p>
@@ -305,16 +305,16 @@ require_once $gU.'index.gz';?>
               </p>
             </div>
           </div>
-          <img src="./assets/img/box-04.webp" alt="Laberinto" class="laberintos" />
+          <img src="assets/img/box-04.webp" alt="Laberinto" class="laberintos" />
         </div>
       </section>
     </section>
   </main>
-   <a href="https://wa.me/34936941824?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20informaci%C3%B3n%20sobre%20Enigma%20Madrid" target="_blank" class="whatsapp"><img src="../assets/svg/whatsapp.svg" alt="WhatsApp" /></a>
+   <a href="https://wa.me/34936941824?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20informaci%C3%B3n%20sobre%20Enigma%20Madrid" target="_blank" class="whatsapp"><img src="assets/svg/whatsapp.svg" alt="WhatsApp" /></a>
   <footer class="footer">
     <div class="footer-naranja">
       <div class="footer-texto">
-        <a href="./pages/paraRegalar.html">REGALA LA<br />EXPERIENCIA</a>
+        <a href="paraRegalar.html">REGALA LA<br />EXPERIENCIA</a>
         <p>93 142 66 38</p>
         <p>clientes@juegoenigma.es</p>
         <p class="btn-donde-estamos">¿DÓNDE ESTAMOS?</p>
@@ -347,15 +347,15 @@ require_once $gU.'index.gz';?>
       <p class="box-direction">Calle Nuestra Señora del Carmen 7, 28039</p>
       <div>
         <p>
-          <img src="../assets/img/metro_line_1.webp" alt="Icono línea metro 1 Madrid" />
+          <img src="assets/img/metro_line_1.webp" alt="Icono línea metro 1 Madrid" />
           Estrecho (5 min)
         </p>
         <p>
-          <img src="../assets/img/metro_line_1.webp" alt="Icono línea metro 1 Madrid" />
+          <img src="assets/img/metro_line_1.webp" alt="Icono línea metro 1 Madrid" />
           Tetuán (5 min)
         </p>
         <p>
-          <img src="../assets/img/metro_line_7.webp" alt="Icono línea metro 7 Madrid" />
+          <img src="assets/img/metro_line_7.webp" alt="Icono línea metro 7 Madrid" />
           Francos Rodríguez (10 min)
         </p>
       </div>
