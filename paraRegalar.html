@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-KRX3VB6");
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Juego Enigma Madrid ofrece aventuras de escape inmersivas para grupos. Pon a prueba tu ingenio, colabora con tu equipo y vive una experiencia única." />
+  <meta name="keywords"
+    content="escape room Madrid, juego enigma, experiencia escape, enigmas, juegos en equipo, misión inmersiva" />
+    
+  <title>Juego Enigma Madrid | Escape Room</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/ico/favicon.ico" type="image/x-icon" />
+  <link rel="canonical" href="https://juegoenigmamadrid.es/paraRegalar.html" />
+</head>
+
+<body style="background-attachment: fixed;">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRX3VB6" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header>
+    <div>
+      <ul>
+        <li>
+          <a href="paraRegalar.html"><img src="assets/svg/spain.svg" alt="Icono bandera de España" /></a>
+        </li>
+        <li>
+          <a href="/ingles/paraRegalar-en.html"><img src="../assets/svg/usa.svg"
+              alt="Icono bandera de Estados Unidos" /></a>
+        </li>
+      </ul>
+    </div>
+    <nav>
+      <a href="/"><img src="/assets/img/logo-enigma.png"
+          alt="Logo Enigma" /></a>
+      <div class="madrid btn-madrid-map">
+        <p>/MADRID</p>
+        <span>+</span>
+      </div>
+      <ul>
+        <li>
+          <a href="/">Escape Room</a>
+        </li>
+        <li><a href="paraRegalar.html" class="orange">Para regalar</a></li>
+        <li><a href="empresas.html">Empresas</a></li>
+        <li><a href="colaboremos.html">Colaboremos</a></li>
+        <li>
+          <a href="reservas.html" class="reservas">Reservar</a>
+        </li>
+      </ul>
+      <div class="menu-toggle">
+        <div class="burger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <div class="mobile-menu">
+          <span><a href="/">Escape Room</a></span>
+          <span><a class="orange" href="paraRegalar.html">Para Regalar</a></span>
+          <span><a href="empresas.html">Empresas</a></span>
+          <span><a href="colaboremos.html">Colaboremos</a></span>
+          <span><a href="#" class="contactanos-btn">Contáctanos</a></span>
+
+          <div class="flags">
+            <a href="/pages/paraRegalar.html"><img src="assets/svg/spain.svg" alt="Icono bandera de España" /></a>
+            <a href="/ingles/paraRegalar-en.html"><img src="../assets/svg/usa.svg"
+                alt="Icono bandera de Estados Unidos" /></a>
+          </div>
+          <a href="./reservas.html" class="btn-reservar-mobile">RESERVAR</a>
+        </div>
+      </div>
+    </nav>
+    <div id="panel-madrid" class="panel-madrid-modal">
+      <div class="panel-madrid-box">
+        <a href="colaboremos.html#colaboremos-separador-1"><img src="assets/img/cityMap.webp"
+            alt="Mapa Enigma España" class="mapa-madrid-img" /></a>
+      </div>
+    </div>
+    <!-- POPUP  3-->
+    <div id="popup-colaboremos-2" class="popup-overlay-2">
+      <div class="popup-box-2">
+        <h2>Contactanos</h2>
+
+        <div class="popup-info-2">
+          <p>Juego Enigma Madrid</p>
+          <p>673 42 37 38</p>
+          <p>info@enigmamadrid.es</p>
+
+          <div>
+            <a href="https://www.tripadvisor.es/Attraction_Review-g187514-d9752255-Reviews-Juego_Enigma-Madrid.html"
+              target="_blank">
+              <img class="trip-icon-2" src="../assets/svg/tripadvisor-white.svg" alt="Logo Tripadvisor" />
+            </a>
+            <a href="https://www.instagram.com/juegoenigma" target="_blank">
+              <img class="ins-icon-2" src="../assets/svg/instagram-white.svg" alt="Logo Instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const popupOverlay2 = document.getElementById("popup-colaboremos-2");
+      const popupBox2 = document.querySelector(".popup-box-2");
+
+      document.querySelectorAll(".contactanos-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          popupOverlay2.classList.add("open");
+        });
+      });
+
+      popupOverlay2.addEventListener("click", (e) => {
+        if (!popupBox2.contains(e.target)) {
+          popupOverlay2.classList.remove("open");
+        }
+      });
+    </script>
+  </header>
+  <a href="./reservas.html" class="btn-reservar-sticky">RESERVAR</a>
+  <script>
+    const btnMadridMap = document.querySelector(".btn-madrid-map");
+    const panelMadrid = document.getElementById("panel-madrid");
+    const stickyBtn2 = document.querySelector(".btn-reservar-sticky");
+
+    btnMadridMap.addEventListener("click", () => {
+      panelMadrid.classList.add("panel-open");
+      stickyBtn2.classList.add("hidden");
+      document.body.classList.add("body-no-scroll");
+    });
+
+    panelMadrid.addEventListener("click", (e) => {
+      if (!e.target.closest(".panel-madrid-box")) {
+        panelMadrid.classList.remove("panel-open");
+        stickyBtn2.classList.remove("hidden");
+        document.body.classList.remove("body-no-scroll");
+      }
+    });
+  </script>
+  <script>
+    const burger = document.querySelector(".burger");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const stickyBtn = document.querySelector(".btn-reservar-sticky");
+
+    burger.addEventListener("click", () => {
+      burger.classList.toggle("open");
+      mobileMenu.classList.toggle("open");
+      stickyBtn.classList.toggle("hidden");
+    });
+  </script>
+  <section class="regalo-section">
+    <div class="regalo">
+      <div class="regalo-texto">
+        <h2>¿QUIERES REGALAR UN ESCAPE ROOM?</h2>
+        <p class="intro">
+          ¿Te gustó nuestra experiencia y tienes a alguien en mente a quien te
+          gustaría regalarsela?
+        </p>
+      </div>
+      <img src="../assets/img/cable_derecho.webp" alt="Decoración de cable naranja" />
+      <img src="../assets/img/box-01.webp" alt="Grupo de personas en escape room" />
+      <p>
+        ¡En Enigma necesitamos ayuda con el enemigo! Necesitamos a agentes
+        capaces, dispuestos a pasarselo genial en una hora intrepida, que
+        acepten el reto que les supone nuestra misión. ¿Conoces a alguno de
+        ellos? ¡Seguro que si, están entre nosotros! Los reconoceras en tus
+        amigos, tu familia, tus compañeros de trabajo! ¡Sorprende a quien tu
+        quieras con un bono o una caja regalo que contenga la actividad de
+        ocio que esta revolucionando Madrid!
+      </p>
+    </div>
+  </section>
+  <section class="opciones-section">
+    <div class="opciones">
+      <img src="../assets/img/cable_izqiuerdo.webp" alt="Decoración de cable naranja" class="opciones-img" />
+      <div class="opciones-texto">
+        <h2>Diferentes opciones de regalo</h2>
+        <p>
+          Adquiere un bono regalo sin salir de esta página o dale un toque más
+          original a tu regalo con una de nuestras cajas regalo
+        </p>
+      </div>
+      <section class="bono-section">
+        <img src="../assets/img/bono_confidencial.webp" alt="Imagen con carpeta confidencial" class="bono-img" />
+        <div class="bono-contenido">
+          <h3>BONO REGALO</h3>
+          <p>
+            Consiste en un bono virtual que se os enviara mediante correo
+            electrónico. Lo podéis imprimir vosotros mismos, y regalarlo a
+            quien queráis, para que reserve el día y la hora que prefiera, o
+            enviarlo directamente al beneficiario. ¡Vale por una sesión en
+            Juego Enigma para un grupo de entre 2 y 6 personas en función de
+            la opción escogida!
+          </p>
+          <p class="nota">
+            Más abajo en esta página puedes ver las distintas opciones de bono
+            de las que disponemos
+          </p>
+          <a href="#comprar" class="bono-boton">BAJA PARA ADQUIRIRLO</a>
+        </div>
+      </section>
+      <section class="fajo-section">
+        <img src="../assets/img/caja_confidencial.webp" alt="Fajos de billetes
+          con mensaje confidencial" />
+        <div class="fajo-contenido">
+          <h3>CAJA REGALO</h3>
+          <p>
+            ¡La opción de regalo más chula! El receptor de la caja regalo
+            deberá conseguir abrirla para poder acceder a su contenido…¡será
+            un buen entrenamiento previo a nuestra misión! En el interior de
+            la caja encontrará información confidencial para acudir a nuestra
+            misión…¡asegurate de que no cae en malas manos! Llama para pedirla
+            y venirla a buscar por nuestras instalaciones
+          </p>
+          <p class="nota">Desde 74€ para 2 personas a 128€ para 6 personas</p>
+          <a href="tel:+34673423738" class="fajo-boton">673 423 738 📞</a>
+        </div>
+      </section>
+    </div>
+  </section>
+  <section class="comprar" id="comprar">
+    <div class="grid-comprar">
+      <div class="comprar-virus">
+        <div class="comprar-virus-title">
+          <p>El Virus</p>
+        </div>
+        <p class="comprar-virus-paragraph">
+          Regala nuestra experiencia EL VIRUS, perfecta para todo tipo de
+          público y edades. Un escape room que combina elementos mecánicos y
+          tecnologicos envueltos en un cuidado especial por la inmersión en la
+          historia y la ambientación.
+        </p>
+      </div>
+      <div class="comprar-virus-form">
+        <label for="jugadores">Jugadores</label>
+        <select id="jugadores">
+          <option value="64">2 Personas 32.00 €/Persona - Gran Reto</option>
+          <option value="77">
+            3 Personas 25.67 €/Persona - Equipo perfecto
+          </option>
+          <option value="96">
+            4 Personas 24.00 €/Persona - Equipo Perfecto
+          </option>
+          <option value="105">
+            5 Personas 21.00 €/Persona - Limite recomendado
+          </option>
+          <option value="118">
+            6 Personas 19.67 €/Persona - No recomendado para expertos
+          </option>
+        </select>
+        <div class="total-compra">
+          TOTAL: <span id="precio-total-1">64€</span>
+          <button id="btn-comprar-1">COMPRAR</button>
+
+        </div>
+      </div>
+      <div class="comprar-keylock">
+        <div class="comprar-keylock-title">
+          <p>El Asesino de Keylock City</p>
+        </div>
+        <p class="comprar-keylock-paragraph">
+          ¿Quieres regalar una experienca para grupos grandes? Nuestro Hall
+          Escape EL ASESINO DE KEYLOCK CITY es perfecto para grupos de entre 8
+          a 16 personas. ¡Perfecta para cumpleaños y despedidas!
+        </p>
+      </div>
+      <div class="comprar-virus-form">
+        <label for="jugadores2">Jugadores</label>
+        <select id="jugadores2">
+          <option value="152">8 Personas 19.00 €/Persona</option>
+          <option value="171">9 Personas 19.00 €/Persona</option>
+          <option value="190">10 Personas 19.00 €/Persona</option>
+          <option value="209">11 Personas 19.00 €/Persona</option>
+          <option value="228">12 Personas 19.00 €/Persona</option>
+          <option value="247">13 Personas 19.00 €/Persona</option>
+          <option value="266">14 Personas 19.00 €/Persona</option>
+          <option value="285">15 Personas 19.00 €/Persona</option>
+          <option value="304">16 Personas 19.00 €/Persona</option>
+          <option value="323">17 Personas 19.00 €/Persona</option>
+          <option value="342">18 Personas 19.00 €/Persona</option>
+          <option value="361">19 Personas 19.00 €/Persona</option>
+          <option value="380">20 Personas 19.00 €/Persona</option>
+          <option value="399">21 Personas 19.00 €/Persona</option>
+          <option value="418">22 Personas 19.00 €/Persona</option>
+          <option value="437">23 Personas 19.00 €/Persona</option>
+          <option value="456">24 Personas 19.00 €/Persona</option>
+          <option value="475">25 Personas 19.00 €/Persona</option>
+          <option value="494">26 Personas 19.00 €/Persona</option>
+          <option value="513">27 Personas 19.00 €/Persona</option>
+          <option value="532">28 Personas 19.00 €/Persona</option>
+        </select>
+        <div class="total-compra">
+          TOTAL: <span id="precio-total-2">152€</span>
+          <button id="btn-comprar-2">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+  </section>
+ <a href="https://wa.me/34936941824?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20informaci%C3%B3n%20sobre%20Enigma%20Madrid" target="_blank" class="whatsapp"><img src="../assets/svg/whatsapp.svg" alt="WhatsApp" /></a>
+  <footer class="footer">
+    <div class="footer-naranja">
+      <div class="footer-texto">
+        <a href="./paraRegalar.html">REGALA LA<br />EXPERIENCIA</a>
+        <p>93 142 66 38</p>
+          <p>clientes@juegoenigma.es</p>
+        <p class="btn-donde-estamos">¿DÓNDE ESTAMOS?</p>
+      </div>
+      <div class="footer-iconos">
+        <a href="https://www.tripadvisor.es/Attraction_Review-g187514-d9752255-Reviews-Juego_Enigma-Madrid.html"
+          target="_blank"><img src="../assets/svg/tripadvisor.svg" alt="Tripadvisor" /></a>
+        <a href="https://www.instagram.com/juegoenigma/" target="_blank"><img src="../assets/svg/instagram.svg"
+            alt="Instagram" /></a>
+      </div>
+    </div>
+    <div class="footer-negro">
+      <a href="#">BLOG</a>
+      <a href="../aviso-legal.html">AVISO LEGAL</a>
+      <a href="../privacidad.html">PRIVACIDAD</a>
+      <a href="../terminos-condiciones.html">TERMINOS Y CONDICIONES</a>
+      <a href="/sitemap.xml">SITEMAP</a>
+    </div>
+  </footer>
+  <footer class="footer-responsive">
+    <p>
+      <a class="tooltip" href="tel:+34673423738">LLAMAR</a>
+    </p>
+    <p class="btn-donde-estamos">¿DÓNDE ESTAMOS?</p>
+  </footer>
+  <div id="panel-donde" class="panel-donde">
+    <div class="panel-donde__box">
+      <button class="panel-donde__close">&times;</button>
+      <h2>¿Dónde estamos?</h2>
+      <p class="box-direction">Calle Nuestra Señora del Carmen 7, 28039</p>
+      <div>
+        <p>
+          <img src="../assets/img/metro_line_1.webp" alt="Icono línea metro 1 Madrid" />
+          Estrecho (5 min)
+        </p>
+        <p>
+          <img src="../assets/img/metro_line_1.webp" alt="Icono línea metro 1 Madrid" />
+          Tetuán (5 min)
+        </p>
+        <p>
+          <img src="../assets/img/metro_line_7.webp" alt="Icono línea metro 7 Madrid" />
+          Francos Rodríguez (10 min)
+        </p>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3632.6362047997254!2d-3.704801223570821!3d40.458420553100154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422900b21de8d5%3A0x8eec68a84be0731c!2sC%2F%20de%20Ntra.%20Sra.%20del%20Carmen%2C%207%2C%20Tetu%C3%A1n%2C%2028039%20Madrid!5e1!3m2!1ses!2ses!4v1763467414714!5m2!1ses!2ses"
+        width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <script>
+    const panelDonde = document.getElementById("panel-donde");
+    const cerrarDonde = document.querySelector(".panel-donde__close");
+
+    document.querySelectorAll(".btn-donde-estamos").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        panelDonde.classList.add("panel-donde--open");
+      });
+    });
+
+    cerrarDonde.addEventListener("click", () => {
+      panelDonde.classList.remove("panel-donde--open");
+    });
+
+    panelDonde.addEventListener("click", (e) => {
+      if (e.target === panelDonde) {
+        panelDonde.classList.remove("panel-donde--open");
+      }
+    });
+  </script>
+  <script>
+      // Lógica para el primer bloque ("El Virus")
+      const desplegable1 = document.getElementById("jugadores");
+      const total1 = document.getElementById("precio-total-1");
+      const btnComprar1 = document.getElementById("btn-comprar-1");
+
+      desplegable1.addEventListener("change", function() {
+        total1.textContent = this.value + "€";
+      });
+      
+      btnComprar1.addEventListener("click", function() {
+        // Reemplazar '#' por enlace de compra (pasarela de pago o carrito)
+        window.location.href = '#'; 
+      });
+
+      // Lógica para el segundo bloque ("El Asesino de Keylock City")
+      const desplegable2 = document.getElementById("jugadores2");
+      const total2 = document.getElementById("precio-total-2");
+      const btnComprar2 = document.getElementById("btn-comprar-2");
+
+      desplegable2.addEventListener("change", function() {
+        total2.textContent = this.value + "€";
+      });
+      
+      btnComprar2.addEventListener("click", function() {
+        // Reemplazar '#' por enlace de compra (pasarela de pago o carrito)
+        window.location.href = '#';
+      });
+    </script>
+</body>
+
+</html>

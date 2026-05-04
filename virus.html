@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-KRX3VB6");
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Juego Enigma Madrid ofrece aventuras de escape inmersivas para grupos. Pon a prueba tu ingenio, colabora con tu equipo y vive una experiencia única." />
+  <meta name="keywords"
+    content="escape room Madrid, juego enigma, experiencia escape, enigmas, juegos en equipo, misión inmersiva" />
+
+  <title>Juego Enigma Madrid | Escape Room</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/ico/favicon.ico" type="image/x-icon" />
+
+  <link href="https://calendar.gestorempresas.es/cleaner.css" rel="stylesheet" />
+  <link href="https://calendar.gestorempresas.es/css/chunk-vendors.css" rel="stylesheet" />
+  <link href="https://calendar.gestorempresas.es/css/app.css" rel="stylesheet" />
+  <link rel="canonical" href="https://juegoenigmamadrid.es/virus.html" />
+
+  <script src="https://unpkg.com/@adamdehaven/vue-custom-tooltip"></script>
+  <script src="https://js.stripe.com/v3/"></script>
+</head>
+
+<body>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRX3VB6" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe>
+  </noscript>
+
+  <header>
+    <div>
+      <ul>
+        <li>
+          <a href="virus.html"><img src="assets/svg/spain.svg" alt="Icono bandera de España" /></a>
+        </li>
+        <li>
+          <a href="/ingles/virus-en.html"><img src="../assets/svg/usa.svg" alt="Icono bandera de Estados Unidos" /></a>
+        </li>
+      </ul>
+    </div>
+
+    <nav>
+      <a href="/">
+        <img src="/assets/img/logo-enigma.png" alt="Logo Enigma" />
+      </a>
+
+      <div class="madrid btn-madrid-map">
+        <p>/MADRID</p>
+        <span>+</span>
+      </div>
+
+      <ul>
+        <li><a href="/">Escape Room</a></li>
+        <li><a href="paraRegalar.html">Para regalar</a></li>
+        <li><a href="empresas.html">Empresas</a></li>
+        <li><a href="colaboremos.html">Colaboremos</a></li>
+        <li><a href="reservas.html" class="reservas">Reservar</a></li>
+      </ul>
+
+      <div class="menu-toggle">
+        <div class="burger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <div class="mobile-menu">
+          <span><a href="/">Escape Room</a></span>
+          <span><a href="paraRegalar.html">Para Regalar</a></span>
+          <span><a href="empresas.html">Empresas</a></span>
+          <span><a href="colaboremos.html">Colaboremos</a></span>
+          <span><a href="#" class="contactanos-btn">Contáctanos</a></span>
+
+          <div class="flags">
+            <a href="virus.html"><img src="assets/svg/spain.svg" alt="Icono bandera de España" /></a>
+            <a href="/ingles/virus-en.html"><img src="../assets/svg/usa.svg"
+                alt="Icono bandera de Estados Unidos" /></a>
+          </div>
+
+          <a href="reservas.html" class="btn-reservar-mobile">RESERVAR</a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="panel-madrid" class="panel-madrid-modal">
+      <div class="panel-madrid-box">
+        <a href="colaboremos.html#colaboremos-separador-1">
+          <img src="assets/img/cityMap.webp" alt="Mapa Enigma España" class="mapa-madrid-img" />
+        </a>
+      </div>
+    </div>
+
+    <div id="popup-colaboremos-2" class="popup-overlay-2">
+      <div class="popup-box-2">
+        <h2>Contactanos</h2>
+
+        <div class="popup-info-2">
+          <p>Juego Enigma Madrid</p>
+          <p>673 42 37 38</p>
+          <p>info@enigmamadrid.es</p>
+
+          <div>
+            <a href="https://www.tripadvisor.es/Attraction_Review-g187514-d9752255-Reviews-Juego_Enigma-Madrid.html"
+              target="_blank">
+              <img class="trip-icon-2" src="assets/svg/tripadvisor-white.svg" alt="Logo Tripadvisor" />
+            </a>
+
+            <a href="https://www.instagram.com/juegoenigma" target="_blank">
+              <img class="ins-icon-2" src="assets/svg/instagram-white.svg" alt="Logo Instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const popupOverlay2 = document.getElementById("popup-colaboremos-2");
+      const popupBox2 = document.querySelector(".popup-box-2");
+
+      document.querySelectorAll(".contactanos-btn").forEach((btn) => {
+        btn.addEventListener("click", () =>
+          popupOverlay2.classList.add("open")
+        );
+      });
+
+      popupOverlay2.addEventListener("click", (e) => {
+        if (!popupBox2.contains(e.target))
+          popupOverlay2.classList.remove("open");
+      });
+    </script>
+  </header>
+
+  <a href="reservas.html" class="btn-reservar-sticky">RESERVAR</a>
+
+  <script>
+    const btnMadridMap = document.querySelector(".btn-madrid-map");
+    const panelMadrid = document.getElementById("panel-madrid");
+    const stickyBtn2 = document.querySelector(".btn-reservar-sticky");
+
+    btnMadridMap.addEventListener("click", () => {
+      panelMadrid.classList.add("panel-open");
+      stickyBtn2.classList.add("hidden");
+      document.body.classList.add("body-no-scroll");
+    });
+
+    panelMadrid.addEventListener("click", (e) => {
+      if (!e.target.closest(".panel-madrid-box")) {
+        panelMadrid.classList.remove("panel-open");
+        stickyBtn2.classList.remove("hidden");
+        document.body.classList.remove("body-no-scroll");
+      }
+    });
+  </script>
+
+  <script>
+    const burger = document.querySelector(".burger");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const stickyBtn = document.querySelector(".btn-reservar-sticky");
+
+    burger.addEventListener("click", () => {
+      burger.classList.toggle("open");
+      mobileMenu.classList.toggle("open");
+      stickyBtn.classList.toggle("hidden");
+    });
+  </script>
+
+  <section class="main-virus">
+    <div class="main-virus-image">
+      <h1>El virus</h1>
+      <div>
+        <p>60 Minutos para salvar el mundo</p>
+        <p>¿Te atreves?</p>
+      </div>
+    </div>
+
+    <div class="main-virus-paragraph">
+      <div>
+        <h3>Tipo de juego:</h3>
+        <p>Escape Room</p>
+      </div>
+      <div>
+        <h3>Edad:</h3>
+        <p>Para todas las edades (menores acompañados)</p>
+      </div>
+      <div>
+        <h3>Nº de Jugadores:</h3>
+        <p>Individial 2 a 6, Combate 4 a 12</p>
+      </div>
+      <div>
+        <h3>Ambientación:</h3>
+        <p>Cientifico-Militar</p>
+      </div>
+      <div>
+        <h3>Precio:</h3>
+        <p>Desde 19€ por persona</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-virus-modos">
+    <div class="main-virus-modos-cont">
+      <div>
+        <h2>MODO INDIVIDUAL</h2>
+        <p>DE 2 A 6 PERSONAS</p>
+        <p>1 SALA</p>
+      </div>
+      <div>
+        <h2>MODO COMBATE</h2>
+        <p>DE 4 A 12 PERSONAS</p>
+        <p>2 SALAS</p>
+        <p>DOBLE MISIÓN EN PARALELO</p>
+      </div>
+    </div>
+
+    <div class="main-virus-modos-img">
+      <p>TRANSMISIÓN ENTRANTE DE E.N.I.G.M.A….</p>
+      <p>
+        El enemigo lleva meses obligando a cientificos a trabajar para
+        elaborar un virus letal y utilizarlo en un ataque biológico contra la
+        población cívil.
+      </p>
+      <p>
+        Para no comprometer la misión, el resto de detalles les serán
+        notificados en el punto de encuentro.
+      </p>
+      <p>FIN DE LA TRANSMISIÓN…</p>
+    </div>
+  </section>
+
+  <section class="main-virus-info">
+    <h2>OTRAS INFORMACIONES</h2>
+
+    <div class="main-virus-info-cont">
+      <div>
+        <h3>¿NO SABEÍS CUANTOS SEREÍS?</h3>
+        <p>
+          ¡Reservad para dos personas o los que sepáis que seréis seguro y
+          pagad la diferencia cuando vengáis!
+        </p>
+      </div>
+
+      <div>
+        <h3>MENORES DE EDAD</h3>
+        <p>
+          La actividad es realizable y disfrutable para menores siempre y
+          cuando vengan acompañados de un adulto o bien se contrate desde la
+          reserva un monitor que dinamice desde dentro de la sala (+19€)
+        </p>
+      </div>
+
+      <div>
+        <h3>DESCUENTO DE 10€ ENTRE SEMANA</h3>
+        <p>
+          Reserva con tu equipo de mínimo 3 agentes, a través del calendario
+          de la web, una misión de lunes a jueves con el código
+          <span>«TOP_SECRET»</span> y obtendrás 10€ de descuento en el importe
+          de la reserva (descuento NO válido en festivos ni para equipos de 2
+          agentes).
+        </p>
+      </div>
+
+      <div>
+        <h3>GRUPOS DE 6 AGENTES</h3>
+        <p>
+          No recomendado para grupos que tengan más de una misión a sus
+          espaldas
+        </p>
+      </div>
+
+      <div>
+        <h3>15 MINUTOS ANTES</h3>
+        <p>
+          Se precisará que llegueis 15 minutos antes y que rellenéis el
+          formulario de la rgpd que se os enviará en el correo de confirmación
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="reservas-aion">
+    <script src="https://unpkg.com/@adamdehaven/vue-custom-tooltip"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+      localStorage.setItem('data-integration-aion-uuid', '35b9efe4-7c60-48cd-b208-3ad70e0e3485');
+      localStorage.setItem('data-integration-aion-url', 'https://madrid.gestorempresas.es');
+      localStorage.setItem('data-integration-aion-locale', 'es_ES');
+    </script>
+    <link href="https://calendar.gestorempresas.es/cleaner.css" rel="stylesheet">
+    <link href="https://calendar.gestorempresas.es/css/chunk-vendors.css" rel="stylesheet">
+    <link href="https://calendar.gestorempresas.es/css/app.css" rel="stylesheet">
+    <noscript><strong>We're sorry but enigma doesn't work properly without JavaScript enabled. Please enable it to
+        continue.</strong></noscript>
+    <div id="aion-checkout-widget"></div>
+    <script src="https://calendar.gestorempresas.es/js/chunk-vendors.js"></script>
+    <script src="https://calendar.gestorempresas.es/js/app.js"></script>
+  </section>
+
+ <a href="https://wa.me/34936941824?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20informaci%C3%B3n%20sobre%20Enigma%20Madrid" target="_blank" class="whatsapp"><img src="assets/svg/whatsapp.svg" alt="WhatsApp" /></a>
+
+  <footer class="footer">
+    <div class="footer-naranja">
+      <div class="footer-texto">
+        <a href="paraRegalar.html">REGALA LA<br />EXPERIENCIA</a>
+        <p>93 142 66 38</p>
+          <p>clientes@juegoenigma.es</p>
+        <p class="btn-donde-estamos">¿DÓNDE ESTAMOS?</p>
+      </div>
+
+      <div class="footer-iconos">
+        <a href="https://www.tripadvisor.es/Attraction_Review-g187514-d9752255-Reviews-Juego_Enigma-Madrid.html"
+          target="_blank">
+          <img src="assets/svg/tripadvisor.svg" alt="Tripadvisor" />
+        </a>
+
+        <a href="https://www.instagram.com/juegoenigma/" target="_blank">
+          <img src="assets/svg/instagram.svg" alt="Instagram" />
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-negro">
+      <a href="#">BLOG</a>
+      <a href="aviso-legal.html">AVISO LEGAL</a>
+      <a href="privacidad.html">PRIVACIDAD</a>
+      <a href="terminos-condiciones.html">TERMINOS Y CONDICIONES</a>
+      <a href="/sitemap.xml">SITEMAP</a>
+    </div>
+  </footer>
+
+  <footer class="footer-responsive">
+    <p>
+      <a class="tooltip" href="tel:+34673423738">LLAMAR</a>
+    </p>
+    <p class="btn-donde-estamos">¿DÓNDE ESTAMOS?</p>
+  </footer>
+
+  <div id="panel-donde" class="panel-donde">
+    <div class="panel-donde__box">
+      <button class="panel-donde__close">&times;</button>
+      <h2>¿Dónde estamos?</h2>
+
+      <p class="box-direction">Calle Nuestra Señora del Carmen 7, 28039</p>
+
+      <div>
+        <p><img src="assets/img/metro_line_1.webp" /> Estrecho (5 min)</p>
+        <p><img src="assets/img/metro_line_1.webp" /> Tetuán (5 min)</p>
+        <p>
+          <img src="assets/img/metro_line_7.webp" /> Francos Rodríguez (10
+          min)
+        </p>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3632.6362047997254!2d-3.704801223570821!3d40.458420553100154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422900b21de8d5%3A0x8eec68a84be0731c!2sC%2F%20de%20Ntra.%20Sra.%20del%20Carmen%2C%207%2C%20Tetu%C3%A1n%2C%2028039%20Madrid!5e1!3m2!1ses!2ses!4v1763467414714!5m2!1ses!2ses"
+        width="600" height="450" style="border: 0" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <script>
+    const panelDonde = document.getElementById("panel-donde");
+    const cerrarDonde = document.querySelector(".panel-donde__close");
+
+    document.querySelectorAll(".btn-donde-estamos").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        panelDonde.classList.add("panel-donde--open");
+      });
+    });
+
+    cerrarDonde.addEventListener("click", () => {
+      panelDonde.classList.remove("panel-donde--open");
+    });
+
+    panelDonde.addEventListener("click", (e) => {
+      if (e.target === panelDonde) {
+        panelDonde.classList.remove("panel-donde--open");
+      }
+    });
+  </script>
+</body>
+
+</html>
