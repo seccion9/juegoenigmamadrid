@@ -63,7 +63,6 @@ header {
   background-image: url(./assets/img/bg_menu.webp);
   display: flex;
   border-bottom: 7px solid #ff5f01;
-  /* padding: 0.5em; */
   position: fixed;
   top: 0;
   left: 0;
@@ -2320,7 +2319,9 @@ h3 {
   justify-content: center;
   width: 65%;
   margin: 0 auto;
-  margin-top: 5em;
+  padding-top: 100px !important; /* Empuja el texto hacia abajo en PC */
+  margin-top: 0 !important;
+ 
 }
 
 .regalo {
@@ -2458,8 +2459,8 @@ h3 {
   color: white;
   text-decoration: none;
   background-color: #ff5f01;
-  padding: 0.7em 0.7em;
-  margin-top: 2.3em;
+  padding: 0.5em 0.5em;
+  margin-top: 0.9em;
 }
 
 .fajo-section {
@@ -3465,7 +3466,6 @@ p {
 
 .main-virus-modos-img {
   background-image: url(./assets/img/pizarra.webp);
-  
   padding: 2em 3em;
   display: flex;
   flex-direction: column;
@@ -4421,13 +4421,13 @@ p {
     border-radius: 4px;
   }
 
-  .popup-box-2 h2 {
+  .popup-box-2 h2, .popup-box h2 {
     margin-top: 0;
     color: #ff5f01;
     font-size: 32px;
   }
 
-  .popup-info-2 p {
+  .popup-info-2 p, .popup-box p {
     color: white;
     font-size: 16px;
   }
@@ -4906,6 +4906,7 @@ p {
   .carrusel h2 {
     margin: 0;
     font-size: 40px;
+    text-align: center;
   }
 
   .carrusel-container {
@@ -4915,12 +4916,12 @@ p {
   .carrusel-container > div {
     flex: 0 0 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 0em;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 2em;
     justify-items: center;
     align-items: center;
-    width: 90%;
+    width: 30%;
   }
 
   .carrusel img {

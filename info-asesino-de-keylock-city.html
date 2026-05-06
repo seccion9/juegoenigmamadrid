@@ -10,6 +10,10 @@
     content="escape room Madrid, juego enigma, experiencia escape, enigmas, juegos en equipo, misión inmersiva" />
     
   <title>Juego Enigma Madrid | Escape Room</title>
+  
+  <!-- 1. CSS del Nuevo Widget (Carga primero para poder aplastarlo) -->
+  <link rel="stylesheet" href="https://aether-static.gestorempresas.es/css/bonos.css" />
+
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="assets/ico/favicon.ico" type="image/x-icon" />
   <link rel="canonical" href="https://juegoenigmamadrid.es/info-asesino-de-keylock-city.html" />
@@ -31,6 +35,51 @@
     })(window, document, "script", "dataLayer", "GTM-KRX3VB6");
   </script>
   <!-- End Google Tag Manager -->
+
+  <!-- ======================================================= -->
+  <!-- ESCUDO DEFINITIVO ADAPTADO PARA KEYLOCK CITY            -->
+  <!-- ======================================================= -->
+  <style id="escudo-antibonos">
+    /* A. Proteger la estructura milimétrica del Header */
+    header { display: flex !important; }
+    header nav { display: flex !important; align-items: center !important; gap: 20px !important; margin: 0 auto !important; }
+    header nav ul { display: flex !important; gap: 2em !important; list-style: none !important; margin: 0 !important; padding: 0 !important; }
+    header nav ul li { display: flex !important; align-items: center !important; }
+    header nav ul li a { position: relative !important; padding-left: 0.4em !important; text-decoration: none !important; font-family: "BankGothic Medium", sans-serif !important; }
+    header nav ul li a.orange::before { position: absolute !important; left: -0.4em !important; top: 58% !important; transform: translateY(-50%) !important; content: "– " !important; color: #ff5f01 !important; font-size: 15px !important; display: block !important; }
+    header nav img { max-width: none !important; }
+    header nav .madrid { display: flex !important; margin-bottom: 80px !important; font-family: "BankGothic Medium", sans-serif !important; }
+    header div ul { display: flex !important; flex-direction: column !important; gap: 0.1em !important; list-style: none !important; margin-left: 5px !important; margin-top: 5px !important; }
+    header ul li img { max-width: none !important; height: 17px !important; width: 22px !important; }
+
+    @media (max-width: 1000px) { header nav .madrid { margin-bottom: 0 !important; } }
+    @media (max-width: 770px) { header nav ul { display: none !important; } header nav { justify-content: space-between !important; } header > div { display: none !important; } }
+
+    /* B. Proteger Footer y Fuentes base */
+    .btn-madrid-map p, footer, footer * { font-family: "BankGothic Medium", sans-serif !important; }
+    .banner-container img, .footer-iconos img { max-width: 100% !important; }
+
+    /* C. Proteger Fuentes Exclusivas de Keylock City (Bebas Neue y Courier) */
+    .titulo-asesino h2, .titulo-asesino b, .titulo-asesino u, .subtitulo-asesino p, .boton-hall span, .rojo1 p, .rojo2 p, .rojo3 p, .rojo4 p, .rojo1 h2, .rojo2 h2, .rojo3 h2, .rojo4 h2, .boton-amarillo1 h2, .boton-amarillo2 h2, .boton-amarillo2 p, .titulo-grupos h2, .titulo-grupos p, .titulo-hall h2, .titulo-reserva h2, .titulo-domicilio h2, .hall-escape1 p, .hall-escape2 p, .hall-escape1 span, .hall-escape2 span, .hall-escape3 h4, .hall-escape3 span, .domicilio-1 p, .domicilio-2 p, .domicilio-1 span, .domicilio-2 span, .que-se-necesita h2, .reserva-domicilio h2, .campo label, .fila input {
+        font-family: "Bebas Neue", sans-serif !important;
+    }
+    .descripcion-negra-contenido p, .descripcion-negra-contenido b {
+        font-family: "Courier Prime", monospace !important;
+    }
+
+    /* D. Calendario Centrado y Hueco del Footer */
+    #system-13773-container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      display: block;
+      padding: 20px 15px;
+      box-sizing: border-box;
+      margin-bottom: 150px !important;
+      margin-top: 50px !important;
+    }
+  </style>
+
 </head>
 
 <body class="body-asesino">
@@ -290,6 +339,8 @@
         </div>
       </div>
     </section>
+
+    <!-- SECCIÓN DE RESERVAS ANTIGUA (Se mantiene intacta) -->
     <section id="asesino-reserva" class="asesino-reserva">
       <div class="titulo-reserva">
         <h2>RESERVAR</h2>
@@ -316,6 +367,25 @@
       <script src="https://calendar.gestorempresas.es/js/chunk-vendors.js"></script>
       <script src="https://calendar.gestorempresas.es/js/app.js"></script>
     </section>
+
+    <!-- ======================================================= -->
+    <!-- NUEVO CALENDARIO AÑADIDO (Sin borrar lo anterior)       -->
+    <!-- ======================================================= -->
+    <section class="nuevo-calendario">
+        <div id="system-13773-container"></div>
+        <script src="https://aether-static.gestorempresas.es/js/bonos.js"></script>
+        <script src="https://aether-static.gestorempresas.es/js/iframeResizer.contentWindow.js"></script>
+        <script>
+        window.start_calendar_routine({
+            base_url: "https://madrid.gestorempresas.es/bonos",
+            content_id: "system-13773-container",
+            icon_load: "https://aether-static.gestorempresas.es/img/loading.gif",
+            uuid: "8a91a94c-fe4c-43b1-9165-24198b6bb76d",
+            lang: "Es"
+        });
+        </script>
+    </section>
+
     <section id="asesino-domicilio" class="asesino-domicilio">
       <div class="titulo-domicilio">
         <h2>EN TU CASA O EMPRESA</h2>
@@ -467,6 +537,26 @@
         panelDonde.classList.remove("panel-donde--open");
       }
     });
+  </script>
+
+  <!-- ========================================================= -->
+  <!-- SCRIPT DE CONTRAATAQUE (Inyecta el escudo otra vez al final) -->
+  <!-- ========================================================= -->
+  <script>
+    function forzarFuente() {
+      const escudo = document.getElementById('escudo-antibonos');
+      if (escudo) {
+          document.body.appendChild(escudo.cloneNode(true));
+      }
+      
+      const miCss = document.querySelector('link[href="style.css"]');
+      if (miCss) {
+        document.head.appendChild(miCss);
+      }
+    }
+    // Ejecutar con un pequeño delay para que bonos.js termine su ataque
+    window.addEventListener('load', forzarFuente);
+    setTimeout(forzarFuente, 800);
   </script>
 </body>
 
