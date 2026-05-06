@@ -12,14 +12,95 @@
   </FilesMatch>
 </IfModule>
 
-<IfModule !mod_headers.c>
-</IfModule>
+# ============================================================
+#  Redirigir rutas antiguas
+# ============================================================
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-DirectoryIndex index.php
-RewriteRule ^index.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
+    RewriteEngine On
+    RewriteRule ^es/home/?$ https://www.juegoenigmamadrid.es/ [R=301,L]
+</IfModule>
+
+# ============================================================
+#  Redirigir no-www → www (evita contenido duplicado en Google)
+# ============================================================
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_HOST} ^juegoenigmamadrid\.es$ [NC]
+    RewriteRule ^(.*)$ https://www.juegoenigmamadrid.es/$1 [R=301,L]
+</IfModule>
+
+# ============================================================
+#  Cache-Control para assets estáticos
+#  Mejora el rendimiento (Lighthouse: "Usar tiempos de caché eficientes")
+# ============================================================
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # HTML — caché corta (el contenido cambia con frecuencia)
+    ExpiresByType text/html                    "access plus 1 hour"
+
+    # CSS y JS — 1 año (ficheros versionados o minificados)
+    ExpiresByType text/css                     "access plus 1 year"
+    ExpiresByType application/javascript       "access plus 1 year"
+    ExpiresByType text/javascript              "access plus 1 year"
+
+    # Imágenes
+    ExpiresByType image/webp                   "access plus 1 year"
+    ExpiresByType image/png                    "access plus 1 year"
+    ExpiresByType image/jpeg                   "access plus 1 year"
+    ExpiresByType image/gif                    "access plus 1 year"
+    ExpiresByType image/svg+xml                "access plus 1 year"
+    ExpiresByType image/x-icon                 "access plus 1 year"
+
+    # Fuentes
+    ExpiresByType font/woff2                   "access plus 1 year"
+    ExpiresByType font/woff                    "access plus 1 year"
+    ExpiresByType font/ttf                     "access plus 1 year"
+    ExpiresByType application/font-woff2       "access plus 1 year"
+    ExpiresByType application/font-woff        "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+    # CSS y JS
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # Imágenes
+    <FilesMatch "\.(webp|png|jpg|jpeg|gif|svg|ico)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # Fuentes
+    <FilesMatch "\.(woff2|woff|ttf|otf|eot)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # HTML
+    <FilesMatch "\.html$">
+        Header set Cache-Control "public, max-age=3600, must-revalidate"
+    </FilesMatch>
+
+    # ============================================================
+    #  Security Headers
+    # ============================================================
+
+    # Strict-Transport-Security: force HTTPS for 1 year (includeSubDomains)
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+    # Prevent clickjacking
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # Stop MIME-type sniffing
+    Header always set X-Content-Type-Options "nosniff"
+
+    # Cross-Origin-Opener-Policy: isolate browsing context (helps with Spectre)
+    Header always set Cross-Origin-Opener-Policy "same-origin-allow-popups"
+
+    # Referrer-Policy: send origin only on same-site; nothing cross-site
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Permissions-Policy: disable features the site doesn't use
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
 </IfModule>

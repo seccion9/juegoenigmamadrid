@@ -2319,7 +2319,7 @@ h3 {
   justify-content: center;
   width: 65%;
   margin: 0 auto;
-  padding-top: 100px !important; /* Empuja el texto hacia abajo en PC */
+  padding-top: 10px !important; 
   margin-top: 0 !important;
  
 }
