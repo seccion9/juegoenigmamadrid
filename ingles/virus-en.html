@@ -18,7 +18,9 @@
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>Juego Enigma Madrid | Escape Room</title>
+  <link rel="stylesheet" href="https://aether-static.gestorempresas.es/css/bonos.css" />
   <link rel="stylesheet" href="../style.css" />
   <link rel="icon" href="../assets/ico/favicon.ico" type="image/x-icon" />
   <link rel="canonical" href="https://juegoenigmamadrid.es/ingles/virus-en.html" />
@@ -29,6 +31,40 @@
 
   <script src="https://unpkg.com/@adamdehaven/vue-custom-tooltip"></script>
   <script src="https://js.stripe.com/v3/"></script>
+
+  <style id="escudo-antibonos">
+    header { display: flex !important; }
+    header nav { display: flex !important; align-items: center !important; gap: 20px !important; margin: 0 auto !important; }
+    header nav ul { display: flex !important; gap: 2em !important; list-style: none !important; margin: 0 !important; padding: 0 !important; }
+    header nav ul li { display: flex !important; align-items: center !important; }
+    header nav ul li a { position: relative !important; padding-left: 0.4em !important; text-decoration: none !important; font-family: "BankGothic Medium", sans-serif !important; }
+    header nav ul li a.orange::before { position: absolute !important; left: -0.4em !important; top: 58% !important; transform: translateY(-50%) !important; content: "– " !important; color: #ff5f01 !important; font-size: 15px !important; display: block !important; }
+    header nav img { max-width: none !important; }
+    header nav .madrid { display: flex !important; margin-bottom: 80px !important; font-family: "BankGothic Medium", sans-serif !important; }
+    header div ul { display: flex !important; flex-direction: column !important; gap: 0.1em !important; list-style: none !important; margin-left: 5px !important; margin-top: 5px !important; }
+    header ul li img { max-width: none !important; height: 17px !important; width: 22px !important; }
+
+    @media (max-width: 1000px) { header nav .madrid { margin-bottom: 0 !important; } }
+    @media (max-width: 770px) { header nav ul { display: none !important; } header nav { justify-content: space-between !important; } header > div { display: none !important; } }
+
+    body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+      font-family: "BankGothic Medium", sans-serif !important;
+    }
+    p { font-family: "BaseMonoWideReg Regular", sans-serif !important; font-weight: 400 !important; font-size: 16px !important; }
+    .btn-madrid-map p, footer, footer * { font-family: "BankGothic Medium", sans-serif !important; }
+    .banner-container img, .footer-iconos img { max-width: 100% !important; }
+
+    #system-13773-container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      display: block;
+      padding: 20px 15px;
+      box-sizing: border-box;
+      margin-bottom: 150px !important;
+      margin-top: 50px !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -42,7 +78,7 @@
     <div>
       <ul id="lang-icons">
         <li>
-          <a href="../pages/virus.html">
+          <a href="../virus.html">
             <img src="../assets/svg/spain.svg" alt="Icono bandera de España" />
           </a>
         </li>
@@ -175,128 +211,145 @@
       stickyBtn.classList.toggle("hidden");
     });
   </script>
-  <section class="main-virus">
-    <div class="main-virus-image">
-      <h1>THE VIRUS</h1>
-      <div>
-        <p>60 MINUTES TO SAVE THE WORLD</p>
-        <p>DO YOU DARE?</p>
+  <main>
+    <section class="main-virus">
+      <div class="main-virus-image">
+        <h1>THE VIRUS</h1>
+        <div>
+          <p>60 MINUTES TO SAVE THE WORLD</p>
+          <p>DO YOU DARE?</p>
+        </div>
       </div>
-    </div>
-    <div class="main-virus-paragraph">
-      <div>
-        <h3>GAME TYPE:</h3>
-        <p>ESCAPE ROOM</p>
+      <div class="main-virus-paragraph">
+        <div>
+          <h3>GAME TYPE:</h3>
+          <p>ESCAPE ROOM</p>
+        </div>
+        <div>
+          <h3>AGE:</h3>
+          <p>FOR ALL AGES (MINORS ACCOMPANIED BY AN ADULT)</p>
+        </div>
+        <div>
+          <h3>NUMBER OF PLAYERS:</h3>
+          <p>INDIVIDUAL 2 TO 6, COMBAT 4 TO 12</p>
+        </div>
+        <div>
+          <h3>SETTING:</h3>
+          <p>MILITARY SCIENTIST</p>
+        </div>
+        <div>
+          <h3>PRICE:</h3>
+          <p>FROM €19 PER PERSON</p>
+        </div>
       </div>
-      <div>
-        <h3>AGE:</h3>
-        <p>FOR ALL AGES (MINORS ACCOMPANIED BY AN ADULT)</p>
+    </section>
+    <section class="main-virus-modos">
+      <div class="main-virus-modos-cont">
+        <div>
+          <h2>INDIVIDUAL MODE</h2>
+          <p>FOR 2 TO 6 PEOPLE</p>
+          <p>1 ROOM</p>
+        </div>
+        <div>
+          <h2>COMBAT MODE</h2>
+          <p>FOR 4 TO 12 PEOPLE</p>
+          <p>2 ROOM</p>
+          <p>DOUBLE MISSION IN PARALLEL</p>
+        </div>
       </div>
-      <div>
-        <h3>NUMBER OF PLAYERS:</h3>
-        <p>INDIVIDUAL 2 TO 6, COMBAT 4 TO 12</p>
-      </div>
-      <div>
-        <h3>SETTING:</h3>
-        <p>MILITARY SCIENTIST</p>
-      </div>
-      <div>
-        <h3>PRICE:</h3>
-        <p>FROM €19 PER PERSON</p>
-      </div>
-    </div>
-  </section>
-  <section class="main-virus-modos">
-    <div class="main-virus-modos-cont">
-      <div>
-        <h2>INDIVIDUAL MODE</h2>
-        <p>FOR 2 TO 6 PEOPLE</p>
-        <p>1 ROOM</p>
-      </div>
-      <div>
-        <h2>COMBAT MODE</h2>
-        <p>FOR 4 TO 12 PEOPLE</p>
-        <p>2 ROOM</p>
-        <p>DOUBLE MISSION IN PARALLEL</p>
-      </div>
-    </div>
-    <div class="main-virus-modos-img">
-      <p>INCOMING TRANSMISSION FROM E.N.I.G.M.A….</p>
-      <p>
-        The enemy has been forcing scientists for months to work on developing
-        a lethal virus and using it in a biological attack against the
-        civilian population.
-      </p>
-      <p>
-        In order not to compromise the mission, the remaining details will be
-        communicated to you at the meeting point.
-      </p>
-      <p>END OF TRANSMISSION…</p>
-    </div>
-  </section>
-  <section class="main-virus-info">
-    <h2>OTHER INFORMATION</h2>
-    <div class="main-virus-info-cont">
-      <div>
-        <h3>DON'T YOU KNOW HOW MANY OF YOU WILL BE?</h3>
+      <div class="main-virus-modos-img">
+        <p>INCOMING TRANSMISSION FROM E.N.I.G.M.A….</p>
         <p>
-          Book for two people or however many you know will be there for sure
-          and pay the difference when you arrive!
+          The enemy has been forcing scientists for months to work on developing
+          a lethal virus and using it in a biological attack against the
+          civilian population.
         </p>
-      </div>
-      <div>
-        <h3>MINORS</h3>
         <p>
-          The activity is suitable and enjoyable for children as long as they
-          are accompanied by an adult or a monitor is hired from the time of
-          booking to lead the activity from inside the room (+€19)
+          In order not to compromise the mission, the remaining details will be
+          communicated to you at the meeting point.
         </p>
+        <p>END OF TRANSMISSION…</p>
       </div>
-      <div>
-        <h3>€10 DISCOUNT ON WEEKDAYS</h3>
-        <p>
-          Book a mission with your team of at least 3 agents, through the
-          website calendar, from Monday to Thursday with the code
-          <span>«TOP_SECRET»</span> and you will get a €10 discount on the
-          booking amount (discount NOT valid on holidays or for teams of 2
-          agents).
-        </p>
+    </section>
+    <section class="main-virus-info">
+      <h2>OTHER INFORMATION</h2>
+      <div class="main-virus-info-cont">
+        <div>
+          <h3>DON'T YOU KNOW HOW MANY OF YOU WILL BE?</h3>
+          <p>
+            Book for two people or however many you know will be there for sure
+            and pay the difference when you arrive!
+          </p>
+        </div>
+        <div>
+          <h3>MINORS</h3>
+          <p>
+            The activity is suitable and enjoyable for children as long as they
+            are accompanied by an adult or a monitor is hired from the time of
+            booking to lead the activity from inside the room (+€19)
+          </p>
+        </div>
+        <div>
+          <h3>€10 DISCOUNT ON WEEKDAYS</h3>
+          <p>
+            Book a mission with your team of at least 3 agents, through the
+            website calendar, from Monday to Thursday with the code
+            <span>«TOP_SECRET»</span> and you will get a €10 discount on the
+            booking amount (discount NOT valid on holidays or for teams of 2
+            agents).
+          </p>
+        </div>
+        <div>
+          <h3>GROUPS OF 6 AGENTS</h3>
+          <p>
+            Not recommended for groups that have more than one mission under
+            their belt.
+          </p>
+        </div>
+        <div>
+          <h3>15 MINUTES BEFORE</h3>
+          <p>
+            You will need to arrive 15 minutes early and fill out the GDPR form
+            that will be sent to you in the confirmation email.
+          </p>
+        </div>
       </div>
-      <div>
-        <h3>GROUPS OF 6 AGENTS</h3>
-        <p>
-          Not recommended for groups that have more than one mission under
-          their belt.
-        </p>
-      </div>
-      <div>
-        <h3>15 MINUTES BEFORE</h3>
-        <p>
-          You will need to arrive 15 minutes early and fill out the GDPR form
-          that will be sent to you in the confirmation email.
-        </p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="reservas-aion">
-    <script src="https://unpkg.com/@adamdehaven/vue-custom-tooltip"></script>
-    <script src="https://js.stripe.com/v3/"></script>
-    <script>
-      localStorage.setItem('data-integration-aion-uuid', '35b9efe4-7c60-48cd-b208-3ad70e0e3485');
-      localStorage.setItem('data-integration-aion-url', 'https://madrid.gestorempresas.es');
-      localStorage.setItem('data-integration-aion-locale', 'en_US');
-    </script>
-    <link href="https://calendar.gestorempresas.es/cleaner.css" rel="stylesheet">
-    <link href="https://calendar.gestorempresas.es/css/chunk-vendors.css" rel="stylesheet">
-    <link href="https://calendar.gestorempresas.es/css/app.css" rel="stylesheet">
-    <noscript><strong>We're sorry but enigma doesn't work properly without JavaScript enabled. Please enable it to
-        continue.</strong></noscript>
-    <div id="aion-checkout-widget"></div>
-    <script src="https://calendar.gestorempresas.es/js/chunk-vendors.js"></script>
-    <script src="https://calendar.gestorempresas.es/js/app.js"></script>
-  </section>
+    <section class="reservas-aion">
+      <script src="https://unpkg.com/@adamdehaven/vue-custom-tooltip"></script>
+      <script src="https://js.stripe.com/v3/"></script>
+      <script>
+        localStorage.setItem('data-integration-aion-uuid', '35b9efe4-7c60-48cd-b208-3ad70e0e3485');
+        localStorage.setItem('data-integration-aion-url', 'https://madrid.gestorempresas.es');
+        localStorage.setItem('data-integration-aion-locale', 'en_US');
+      </script>
+      <link href="https://calendar.gestorempresas.es/cleaner.css" rel="stylesheet">
+      <link href="https://calendar.gestorempresas.es/css/chunk-vendors.css" rel="stylesheet">
+      <link href="https://calendar.gestorempresas.es/css/app.css" rel="stylesheet">
+      <noscript><strong>We're sorry but enigma doesn't work properly without JavaScript enabled. Please enable it to
+          continue.</strong></noscript>
+      <div id="aion-checkout-widget"></div>
+      <script src="https://calendar.gestorempresas.es/js/chunk-vendors.js"></script>
+      <script src="https://calendar.gestorempresas.es/js/app.js"></script>
+    </section>
 
+    <section class="nuevo-calendario">
+      <div id="system-13773-container"></div>
+      <script src="https://aether-static.gestorempresas.es/js/bonos.js"></script>
+      <script src="https://aether-static.gestorempresas.es/js/iframeResizer.contentWindow.js"></script>
+      <script>
+      window.start_calendar_routine({
+          base_url: "https://madrid.gestorempresas.es/bonos",
+          content_id: "system-13773-container",
+          icon_load: "https://aether-static.gestorempresas.es/img/loading.gif",
+          uuid: "2a3deaa0-77f1-49ec-87a0-49ccc96e8fc2",
+          lang: "En"
+      });
+      </script>
+    </section>
+
+  </main>
  <a href="https://wa.me/34936941824?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20informaci%C3%B3n%20sobre%20Enigma%20Madrid" target="_blank" class="whatsapp"><img src="../assets/svg/whatsapp.svg" alt="WhatsApp" /></a>
   <footer class="footer">
     <div class="footer-naranja">
@@ -372,6 +425,21 @@
         panelDonde.classList.remove("panel-donde--open");
       }
     });
+  </script>
+
+  <script>
+    function forzarFuente() {
+      const escudo = document.getElementById('escudo-antibonos');
+      if (escudo) {
+          document.body.appendChild(escudo.cloneNode(true));
+      }
+      const miCss = document.querySelector('link[href="../style.css"]');
+      if (miCss) {
+        document.head.appendChild(miCss);
+      }
+    }
+    window.addEventListener('load', forzarFuente);
+    setTimeout(forzarFuente, 800);
   </script>
 </body>
 
